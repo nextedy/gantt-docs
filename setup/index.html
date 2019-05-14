@@ -240,15 +240,63 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#full-report-gantt" title="Full report gantt" class="md-nav__link">
-    Full report gantt
+  <a href="#widget" title="Widget" class="md-nav__link">
+    Widget
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gantt-as-widget" title="Gantt as widget" class="md-nav__link">
-    Gantt as widget
+  <a href="#display-modes" title="Display Modes" class="md-nav__link">
+    Display Modes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-report-gantt" title="Full Report Gantt" class="md-nav__link">
+    Full Report Gantt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gantt-as-widget" title="Gantt as Widget" class="md-nav__link">
+    Gantt as Widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-mapping" title="Data Mapping" class="md-nav__link">
+    Data Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" title="Hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more" title="More" class="md-nav__link">
+    More
   </a>
   
 </li>
@@ -321,15 +369,63 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#full-report-gantt" title="Full report gantt" class="md-nav__link">
-    Full report gantt
+  <a href="#widget" title="Widget" class="md-nav__link">
+    Widget
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gantt-as-widget" title="Gantt as widget" class="md-nav__link">
-    Gantt as widget
+  <a href="#display-modes" title="Display Modes" class="md-nav__link">
+    Display Modes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-report-gantt" title="Full Report Gantt" class="md-nav__link">
+    Full Report Gantt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gantt-as-widget" title="Gantt as Widget" class="md-nav__link">
+    Gantt as Widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-mapping" title="Data Mapping" class="md-nav__link">
+    Data Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" title="Hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more" title="More" class="md-nav__link">
+    More
   </a>
   
 </li>
@@ -358,18 +454,23 @@
 We suppose the plugin is already installed.
 If you look for the the plugin installation instructions you will find them in the distribution zip file.</p>
 </div>
-<p>You have two options:</p>
+<h2 id="widget">Widget</h2>
+<p>The Work Item Gantt is implemented as standard Polarion widget.</p>
+<p><img alt="Gantt" src="../img/gantt-widget-add.png" /></p>
+<p>All the configuration options are described on <a href="../widget/#widget-parameters">Widget Parameters</a> page.</p>
+<h2 id="display-modes">Display Modes</h2>
+<p>You have two options how to display the Gantt widget.</p>
 <ol>
 <li>
-<p>Setup Gantt as full report view</p>
+<p>Setup Gantt as Full-Report view</p>
 <p>OR</p>
 </li>
 <li>
-<p>Add interactive Gantt to an existing report</p>
+<p>Add Gantt to an existing report</p>
 </li>
 </ol>
-<h2 id="full-report-gantt">Full report gantt</h2>
-<p>The most common approach to display <em>Work Items Gantt</em> is to create a single LiveReport page, call it for example <em>Gantt</em>, and put the <em>Work Items Gantt Widget</em> as single widget there.</p>
+<h3 id="full-report-gantt">Full Report Gantt</h3>
+<p>The most common approach to show <em>Work Items Gantt</em> is to create a single LiveReport page, call it for example <em>Gantt</em>, and put the <em>Work Items Gantt Widget</em> as single widget there.</p>
 <p>In this case we recommend to activate following widget property:</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'yes'</li>
@@ -377,7 +478,7 @@ If you look for the the plugin installation instructions you will find them in t
 <p>This will make the widget size equal to working area size.</p>
 <p>Please make sure there are no additional empty paragraphs or other whitespace content around the widget.</p>
 <p><img alt="Gantt Maximize Widget Property" src="../img/gantt-max-property.png" /></p>
-<h2 id="gantt-as-widget">Gantt as widget</h2>
+<h3 id="gantt-as-widget">Gantt as Widget</h3>
 <p>Sometimes it is more useful to embed the Gantt widget to an existing reports, together with other reporting widgets. In such case make sure that <code>Maximize</code> property is turned off.</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'no'</li>
@@ -386,6 +487,35 @@ If you look for the the plugin installation instructions you will find them in t
 <p class="admonition-title">Warning</p>
 <p>Currently it is possible to have only one Work Item Gantt widget on a page. Please do not add more of them on a single page.</p>
 </div>
+<h2 id="data-mapping">Data Mapping</h2>
+<p>Once you have the widget on your page, you need to configure where to store scheduling informations. The gantt model is storing following data:
+* Start Date (Date)
+* Duration (Number of days)
+* Progress (Float from 0 .. 1)</p>
+<p>You can configure the mapping using the Advanced Widget parameters:</p>
+<ul>
+<li>
+<p><code>Start Field</code> -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.</p>
+</li>
+<li>
+<p><code>Duration Field</code> -  the name of the custom field, that holds when the work item duration as number of days. It can be any of: Integer or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use an Integer custom field.</p>
+</li>
+<li>
+<p><code>Progress Field</code> - the name of the custom field, that holds when the work item progress as float (if you multiple by 100 you get % of completion). It can be any of: Float or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Float custom field.</p>
+</li>
+</ul>
+<h2 id="hierarchy">Hierarchy</h2>
+<p>The hierarchy of items on the gantt chart is derived from work item links. This is controlled by <code>Parent Role</code> widget parameter:</p>
+<ul>
+<li><code>Parent Role</code> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<p>The dependency links are also derived from the work item links. This is controlled by <code>Dependency Role</code> widget parameter:</p>
+<ul>
+<li><code>Dependency Role</code> - select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.</li>
+</ul>
+<h2 id="more">More</h2>
+<p>There a lot more configuration options, see <a href="../widget/#widget-parameters">Widget Parameters</a> page for the full list. </p>
                 
                   
                 
