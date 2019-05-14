@@ -5,4 +5,8 @@ nav:
     - Widget: widget.md
     - Changelog: changelog.md
     - About: about.md
-theme: readthedocs
+theme:
+  name: 'material'
+
+markdown_extensions:
+  - admonition
