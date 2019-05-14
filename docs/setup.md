@@ -52,6 +52,7 @@ Sometimes it is more useful to embed the Gantt widget to an existing reports, to
 ## Data Mapping
 
 Once you have the widget on your page, you need to configure where to store scheduling informations. The gantt model is storing following data:
+
 * Start Date (Date)
 * Duration (Number of days)
 * Progress (Float from 0 .. 1)
