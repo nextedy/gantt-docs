@@ -24,7 +24,8 @@ It of course makes sense to sometimes embedd the gantt view on existing reports,
 
 * `Advanced` >  `Maximize` - set the Maximize property of the widget to 'no'
 
-## Limitation
+!!! info
+	Currently it is possible to have only one Work Item Gantt widget on a page.
 
-Currently it is possible to have only one Gantt widget on a page.
+
 

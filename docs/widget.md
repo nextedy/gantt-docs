@@ -1,4 +1,13 @@
-# Widget Parameters 
+# Widget
+
+You will find widget under the "workitems" tag:
+
+screenshot
+
+!!! info
+	Currently it is possible to have only one Work Item Gantt widget on a page.
+
+## Widget Parameters 
 
 
 

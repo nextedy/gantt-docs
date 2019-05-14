@@ -4,11 +4,11 @@
 
 
 * **1.0.1**
-	* **Warn when multiple widgets on single page** - handle the situation (via nice warning) that it is not possible to have more gantt widgets on single page
-	* New Work Items Gantt widget icon
+	* Widget: New Work Items Gantt widget icon, tag "workitems" added
+	
 * **1.0.0** - Intial version
 
-tu## TODO
+## TODO
 
 * **Refresh** - refresh action to reload the Gantt
 * **Drag children control** - add option to turn on/off drag children instantly on Gantt, the widget property would hold the default
