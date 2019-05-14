@@ -19,6 +19,6 @@ markdown_extensions:
   - admonition
   - codehilite
   
- google_analytics:
+google_analytics:
   - 'UA-125777914-2'
   - 'auto'
