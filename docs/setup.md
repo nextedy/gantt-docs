@@ -79,7 +79,7 @@ The dependency links are also derived from the work item links. This is controll
 
 ## More 
 
-There a lot more configuration options, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
+There are more configuration options available, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
 
 
 
