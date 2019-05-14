@@ -46,6 +46,12 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
       
     
     
@@ -63,7 +69,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="blue">
   
     <svg class="md-svg">
       <defs>
@@ -346,8 +354,10 @@
                 
                 <h1 id="widget">Widget</h1>
 <p>You will find widget under the "workitems" tag:</p>
-<pre><code>ADD SCREENSHOT
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">ADD</span> <span class="n">SCREENSHOT</span>
+</pre></div>
+
+
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Currently it is possible to have only one Work Item Gantt widget on a page.</p>
@@ -404,33 +414,33 @@
 </ul>
 <h3 id="additional-script">Additional Script</h3>
 <p>You can add additional DHTMLX Gantt javascript configuration options, e.g.:</p>
-<pre><code>gantt.config.start_date = new Date(2018, 12, 10);
-gantt.config.end_date = new Date(2020, 08, 20);
+<div class="codehilite"><pre><span></span>    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">start_date</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">end_date</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">08</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
 
-gantt.config.scale_unit = "month";
-gantt.config.step = 1;
-gantt.config.date_scale = "%F, %Y";
-gantt.config.min_column_width = 50;
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">scale_unit</span> <span class="o">=</span> <span class="s2">&quot;month&quot;</span><span class="p">;</span>
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">date_scale</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%F</span><span class="s2">, %Y&quot;</span><span class="p">;</span>
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">min_column_width</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
 
-gantt.config.scale_height = 90;
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">scale_height</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span>
 
-var weekScaleTemplate = function (date) {
-    var dateToStr = gantt.date.date_to_str("%d %M");
-    var endDate = gantt.date.add(gantt.date.add(date, 1, "week"), -1, "day");
-    return dateToStr(date) + " - " + dateToStr(endDate);
-    };
+    <span class="n">var</span> <span class="n">weekScaleTemplate</span> <span class="o">=</span> <span class="n">function</span> <span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">var</span> <span class="n">dateToStr</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">date_to_str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> %M&quot;</span><span class="p">);</span>
+        <span class="n">var</span> <span class="n">endDate</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;week&quot;</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; - &quot;</span> <span class="o">+</span> <span class="n">dateToStr</span><span class="p">(</span><span class="n">endDate</span><span class="p">);</span>
+        <span class="p">};</span>
 
-var daysStyle = function(date){
-    var dateToStr = gantt.date.date_to_str("%D");
-    if (dateToStr(date) == "Sun"||dateToStr(date) == "Sat")  return "weekend";
-    return "";
-    };
+    <span class="n">var</span> <span class="n">daysStyle</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">date</span><span class="p">){</span>
+        <span class="n">var</span> <span class="n">dateToStr</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">date_to_str</span><span class="p">(</span><span class="s2">&quot;%D&quot;</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Sun&quot;</span><span class="o">||</span><span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Sat&quot;</span><span class="p">)</span>  <span class="k">return</span> <span class="s2">&quot;weekend&quot;</span><span class="p">;</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+        <span class="p">};</span>
 
-gantt.config.subscales = [
-    {unit: "week", step: 1, template: weekScaleTemplate},
-    {unit:"day", step:1, date:"%D", css:daysStyle }
-    ];
-</code></pre>
+    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">subscales</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span><span class="n">unit</span><span class="p">:</span> <span class="s2">&quot;week&quot;</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">template</span><span class="p">:</span> <span class="n">weekScaleTemplate</span><span class="p">},</span>
+        <span class="p">{</span><span class="n">unit</span><span class="p">:</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="n">date</span><span class="p">:</span><span class="s2">&quot;%D&quot;</span><span class="p">,</span> <span class="n">css</span><span class="p">:</span><span class="n">daysStyle</span> <span class="p">}</span>
+        <span class="p">];</span>
+</pre></div>
                 
                   
                 
