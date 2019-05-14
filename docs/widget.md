@@ -1,6 +1,6 @@
 # Widget
 
-You will find widget under the "workitems" tag:
+The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
 ![Gantt](img/gantt-widget-add.png)
 
