@@ -1,4 +1,7 @@
-site_name: Work Items Gantt
+site_name: Work Items Gantt by Nextedy Systems
+site_description: 'A set of Polarion Extensions to enable project scheduling in Polarion ALM'
+site_author: 'Nextedy'
+
 nav:
     - Getting Started: index.md
     - Setup: setup.md
@@ -7,6 +10,15 @@ nav:
     - About: about.md
 theme:
   name: 'material'
+  font: false
+  palette:
+    primary: 'amber'
+    accent: 'blue'
 
 markdown_extensions:
   - admonition
+  - codehilite
+  
+ google_analytics:
+  - 'UA-125777914-2'
+  - 'auto'

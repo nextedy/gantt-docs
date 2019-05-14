@@ -2,7 +2,7 @@
 
 You will find widget under the "workitems" tag:
 
-screenshot
+![Gantt](img/gantt-widget-add.png)
 
 !!! info
 	Currently it is possible to have only one Work Item Gantt widget on a page.
@@ -47,6 +47,8 @@ screenshot
 
 You can add additional DHTMLX Gantt javascript configuration options, e.g.:
 
+``` python
+
     gantt.config.start_date = new Date(2018, 12, 10);
     gantt.config.end_date = new Date(2020, 08, 20);
 
@@ -73,4 +75,5 @@ You can add additional DHTMLX Gantt javascript configuration options, e.g.:
         {unit: "week", step: 1, template: weekScaleTemplate},
         {unit:"day", step:1, date:"%D", css:daysStyle }
         ];
+```
 

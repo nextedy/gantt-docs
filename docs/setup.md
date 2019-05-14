@@ -1,9 +1,15 @@
 # Setup
 
+!!! info "Installation"
+    In this document we describe how to configure Polarion to display the Work Item Gantt. 
+    We suppose the plugin is already installed.
+    If you look for the the plugin installation instructions you will find them in the distribution zip file.
+
 You have two options:
 
 1.	Setup Gantt as full report view
 2.	Add interactive Gantt widget to your existing report
+
 
 ##  Full report gantt
 
