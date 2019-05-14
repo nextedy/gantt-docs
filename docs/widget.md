@@ -11,11 +11,11 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
 
 
-* `Work Items` - a standard data set parameter, where you define what are work items you want to see on your gantt.
+* `Work Items` - a standard data set parameter,select what work items you want to see on your the gantt chart.
 
-* `Parent Role` - Select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.
+* `Parent Role` - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.
 
-* `Dependency Role` - Select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.
+* `Dependency Role` - select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.
 
 * `Load Children` - define how many levels of child items should be traversed and added to the list in addition to the items from 'Work Items' attributes. Zero (0) means that no additional items are shown.
 
@@ -28,7 +28,7 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
 * `Maximize View` -  configure if the widget should expand the over the full working area. See [Setup](../setup/).
 
-* `Start Field` -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. DIf such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.
+* `Start Field` -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.
 
 * `Duration Field` -  the name of the custom field, that holds when the work item duration as number of days. It can be any of: Integer or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use an Integer custom field.
 
