@@ -1,0 +1,8 @@
+site_name: Work Items Gantt
+nav:
+    - Getting Started: index.md
+    - Setup: setup.md
+    - Widget: widget.md
+    - Changelog: changelog.md
+    - About: about.md
+theme: readthedocs
