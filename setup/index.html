@@ -65,6 +65,31 @@
     
     
       
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-125777914-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -327,6 +352,12 @@
                 
                 
                 <h1 id="setup">Setup</h1>
+<div class="admonition info">
+<p class="admonition-title">Installation</p>
+<p>In this document we describe how to configure Polarion to display the Work Item Gantt. 
+We suppose the plugin is already installed.
+If you look for the the plugin installation instructions you will find them in the distribution zip file.</p>
+</div>
 <p>You have two options:</p>
 <ol>
 <li>Setup Gantt as full report view</li>
