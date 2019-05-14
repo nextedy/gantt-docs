@@ -282,8 +282,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../changelog/" title="Changelog" class="md-nav__link">
-      Changelog
+    <a href="../changelog/" title="Release Notes" class="md-nav__link">
+      Release Notes
     </a>
   </li>
 
@@ -360,25 +360,31 @@ If you look for the the plugin installation instructions you will find them in t
 </div>
 <p>You have two options:</p>
 <ol>
-<li>Setup Gantt as full report view</li>
-<li>Add interactive Gantt widget to your existing report</li>
+<li>
+<p>Setup Gantt as full report view</p>
+<p>OR</p>
+</li>
+<li>
+<p>Add interactive Gantt to an existing report</p>
+</li>
 </ol>
 <h2 id="full-report-gantt">Full report gantt</h2>
-<p>A common approach to integrating Work Items Gantt to Polarion ALM is to create a single Report page, e.g. Gantt, and put the Work Items Gantt Widget as single widget there.</p>
-<p>To use gannt in full report view, activate following property:</p>
+<p>The most common approach to display <em>Work Items Gantt</em> is to create a single LiveReport page, call it for example <em>Gantt</em>, and put the <em>Work Items Gantt Widget</em> as single widget there.</p>
+<p>In this case we recommend to activate following widget property:</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'yes'</li>
 </ul>
+<p>This will make the widget size equal to working area size.</p>
 <p>Please make sure there are no additional empty paragraphs or other whitespace content around the widget.</p>
 <p><img alt="Gantt Maximize Widget Property" src="../img/gantt-max-property.png" /></p>
 <h2 id="gantt-as-widget">Gantt as widget</h2>
-<p>It of course makes sense to sometimes embedd the gantt view on existing reports, together with other reporting widgets, to do so:</p>
+<p>Sometimes it is more useful to embed the Gantt widget to an existing reports, together with other reporting widgets. In such case make sure that <code>Maximize</code> property is turned off.</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'no'</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Currently it is possible to have only one Work Item Gantt widget on a page.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently it is possible to have only one Work Item Gantt widget on a page. Please do not add more of them on a single page.</p>
 </div>
                 
                   
