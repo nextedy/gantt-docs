@@ -35,7 +35,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../img/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
     
     
@@ -382,42 +382,51 @@
 <p><img alt="Gantt" src="../img/gantt-widget-add.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Currently it is possible to have only one Work Item Gantt widget on a page.</p>
+<p>Currently, it is possible to have only one Work Item Gantt widget on a page.</p>
 </div>
 <h2 id="widget-parameters">Widget Parameters</h2>
 <ul>
 <li>
-<p><code>Work Items</code> - a standard data set parameter,select what work items you want to see on your the gantt chart.</p>
+<p><code>Work Items</code> - a standard data set parameter, select what work items you want to see on your Gantt chart.</p>
 </li>
 <li>
 <p><code>Parent Role</code> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</p>
 </li>
 <li>
-<p><code>Dependency Role</code> - select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.</p>
+<p><code>Dependency Role</code> - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. </p>
+<p>If you select multiple link roles, the first role is used when creating new links.</p>
 </li>
 <li>
-<p><code>Load Children</code> - define how many levels of child items should be traversed and added to the list in addition to the items from 'Work Items' attributes. Zero (0) means that no additional items are shown.</p>
+<p><code>Load Children</code> - define how many levels of child items should be traversed and added to the list in addition to the items from <code>Work Items</code> date set parameter. </p>
+<p>Zero (0) means that no additional items are shown.</p>
 </li>
 <li>
-<p><code>Show Unplanned</code> - click on 'no' to hide all the work items that do not have the start field set. If you keep it set to 'yes', such tasks will be in the list, scheduled for 'Today', marked by gray color. </p>
+<p><code>Show Unplanned</code> - click on <code>no</code> to hide all the work items that do not have the <code>Start Field</code> set. </p>
+<p>If you keep it set to <code>yes</code>, such tasks will be in the list, scheduled for 'Today', and marked by gray color. </p>
 </li>
 <li>
-<p><code>Drag Children</code> - To allow dragging children when the user is dragging their parent's task, set this property to 'yes'</p>
+<p><code>Drag Children</code> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
 </li>
 </ul>
 <h3 id="advanced">Advanced</h3>
 <ul>
 <li>
-<p><code>Maximize View</code> -  configure if the widget should expand the over the full working area. See <a href="../setup/">Setup</a>.</p>
+<p><code>Maximize View</code> -  configure if the widget should expand its content over the full working area. See <a href="../setup/">Setup</a>.</p>
 </li>
 <li>
-<p><code>Start Field</code> -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.</p>
+<p><code>Start Field</code> -  the name of the custom field, that stores the information when the work item starts. </p>
+<p>The type of the custom field can be any of these: Date, Date-Time or String. </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.</p>
 </li>
 <li>
-<p><code>Duration Field</code> -  the name of the custom field, that holds when the work item duration as number of days. It can be any of: Integer or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use an Integer custom field.</p>
+<p><code>Duration Field</code> -  the name of the custom field, that stores the information about the work item duration as the number of days. </p>
+<p>The type of the custom field can be any of these: Integer or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using an Integer custom field.</p>
 </li>
 <li>
-<p><code>Progress Field</code> - the name of the custom field, that holds when the work item progress as float (if you multiple by 100 you get % of completion). It can be any of: Float or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Float custom field.</p>
+<p><code>Progress Field</code> - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). </p>
+<p>The type of the custom field can be any of these: Float or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.</p>
 </li>
 <li>
 <p><code>Sort by</code> -  the sort criteria to sort the top level work items.</p>
@@ -431,37 +440,37 @@
 </ul>
 </li>
 <li>
-<p><code>Max Items</code> -  (Integer) limmits the maximum number of work items loaded into the gantt view.</p>
+<p><code>Max Items</code> -  (Integer) limits the maximum number of work items loaded into the Gantt view.</p>
 </li>
 </ul>
 <h3 id="additional-script">Additional Script</h3>
-<p>You can add additional DHTMLX Gantt javascript configuration options, e.g.:</p>
-<div class="codehilite"><pre><span></span>    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">start_date</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">end_date</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">08</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+<p>You can add additional Gantt javascript configuration options, e.g.:</p>
+<div class="codehilite"><pre><span></span>    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">start_date</span> <span class="o">=</span> <span class="nv">new</span> <span class="nv">Date</span><span class="ss">(</span><span class="mi">2018</span>, <span class="mi">12</span>, <span class="mi">10</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">end_date</span> <span class="o">=</span> <span class="nv">new</span> <span class="nv">Date</span><span class="ss">(</span><span class="mi">2020</span>, <span class="mi">08</span>, <span class="mi">20</span><span class="ss">)</span><span class="c1">;</span>
 
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">scale_unit</span> <span class="o">=</span> <span class="s2">&quot;month&quot;</span><span class="p">;</span>
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">date_scale</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%F</span><span class="s2">, %Y&quot;</span><span class="p">;</span>
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">min_column_width</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">scale_unit</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s">month</span><span class="s2">&quot;</span><span class="c1">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">step</span> <span class="o">=</span> <span class="mi">1</span><span class="c1">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">date_scale</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="s">%F, %Y</span><span class="s2">&quot;</span><span class="c1">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">min_column_width</span> <span class="o">=</span> <span class="mi">50</span><span class="c1">;</span>
 
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">scale_height</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">scale_height</span> <span class="o">=</span> <span class="mi">90</span><span class="c1">;</span>
 
-    <span class="n">var</span> <span class="n">weekScaleTemplate</span> <span class="o">=</span> <span class="n">function</span> <span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">var</span> <span class="n">dateToStr</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">date_to_str</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> %M&quot;</span><span class="p">);</span>
-        <span class="n">var</span> <span class="n">endDate</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;week&quot;</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; - &quot;</span> <span class="o">+</span> <span class="n">dateToStr</span><span class="p">(</span><span class="n">endDate</span><span class="p">);</span>
-        <span class="p">};</span>
+    <span class="nv">var</span> <span class="nv">weekScaleTemplate</span> <span class="o">=</span> <span class="nv">function</span> <span class="ss">(</span><span class="nv">date</span><span class="ss">)</span> {
+        <span class="nv">var</span> <span class="nv">dateToStr</span> <span class="o">=</span> <span class="nv">gantt</span>.<span class="nv">date</span>.<span class="nv">date_to_str</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">%d %M</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+        <span class="nv">var</span> <span class="nv">endDate</span> <span class="o">=</span> <span class="nv">gantt</span>.<span class="nv">date</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">gantt</span>.<span class="nv">date</span>.<span class="nv">add</span><span class="ss">(</span><span class="nv">date</span>, <span class="mi">1</span>, <span class="s2">&quot;</span><span class="s">week</span><span class="s2">&quot;</span><span class="ss">)</span>, <span class="o">-</span><span class="mi">1</span>, <span class="s2">&quot;</span><span class="s">day</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+        <span class="k">return</span> <span class="nv">dateToStr</span><span class="ss">(</span><span class="nv">date</span><span class="ss">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="s"> - </span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nv">dateToStr</span><span class="ss">(</span><span class="nv">endDate</span><span class="ss">)</span><span class="c1">;</span>
+        }<span class="c1">;</span>
 
-    <span class="n">var</span> <span class="n">daysStyle</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">date</span><span class="p">){</span>
-        <span class="n">var</span> <span class="n">dateToStr</span> <span class="o">=</span> <span class="n">gantt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">date_to_str</span><span class="p">(</span><span class="s2">&quot;%D&quot;</span><span class="p">);</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Sun&quot;</span><span class="o">||</span><span class="n">dateToStr</span><span class="p">(</span><span class="n">date</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Sat&quot;</span><span class="p">)</span>  <span class="k">return</span> <span class="s2">&quot;weekend&quot;</span><span class="p">;</span>
-        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-        <span class="p">};</span>
+    <span class="nv">var</span> <span class="nv">daysStyle</span> <span class="o">=</span> <span class="nv">function</span><span class="ss">(</span><span class="nv">date</span><span class="ss">)</span>{
+        <span class="nv">var</span> <span class="nv">dateToStr</span> <span class="o">=</span> <span class="nv">gantt</span>.<span class="nv">date</span>.<span class="nv">date_to_str</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">%D</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+        <span class="k">if</span> <span class="ss">(</span><span class="nv">dateToStr</span><span class="ss">(</span><span class="nv">date</span><span class="ss">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">Sun</span><span class="s2">&quot;</span><span class="o">||</span><span class="nv">dateToStr</span><span class="ss">(</span><span class="nv">date</span><span class="ss">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">Sat</span><span class="s2">&quot;</span><span class="ss">)</span>  <span class="k">return</span> <span class="s2">&quot;</span><span class="s">weekend</span><span class="s2">&quot;</span><span class="c1">;</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="c1">;</span>
+        }<span class="c1">;</span>
 
-    <span class="n">gantt</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">subscales</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">{</span><span class="n">unit</span><span class="p">:</span> <span class="s2">&quot;week&quot;</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">template</span><span class="p">:</span> <span class="n">weekScaleTemplate</span><span class="p">},</span>
-        <span class="p">{</span><span class="n">unit</span><span class="p">:</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="n">date</span><span class="p">:</span><span class="s2">&quot;%D&quot;</span><span class="p">,</span> <span class="n">css</span><span class="p">:</span><span class="n">daysStyle</span> <span class="p">}</span>
-        <span class="p">];</span>
+    <span class="nv">gantt</span>.<span class="nv">config</span>.<span class="nv">subscales</span> <span class="o">=</span> [
+        {<span class="nv">unit</span>: <span class="s2">&quot;</span><span class="s">week</span><span class="s2">&quot;</span>, <span class="nv">step</span>: <span class="mi">1</span>, <span class="nv">template</span>: <span class="nv">weekScaleTemplate</span>},
+        {<span class="nv">unit</span>:<span class="s2">&quot;</span><span class="s">day</span><span class="s2">&quot;</span>, <span class="nv">step</span>:<span class="mi">1</span>, <span class="nv">date</span>:<span class="s2">&quot;</span><span class="s">%D</span><span class="s2">&quot;</span>, <span class="nv">css</span>:<span class="nv">daysStyle</span> }
+        ]<span class="c1">;</span>
 </pre></div>
                 
                   

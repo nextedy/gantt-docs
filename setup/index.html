@@ -35,7 +35,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../img/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
     
     
@@ -295,6 +295,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#time-range" title="Time Range" class="md-nav__link">
+    Time Range
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#more" title="More" class="md-nav__link">
     More
   </a>
@@ -424,6 +431,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#time-range" title="Time Range" class="md-nav__link">
+    Time Range
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#more" title="More" class="md-nav__link">
     More
   </a>
@@ -450,16 +464,16 @@
                 <h1 id="setup">Setup</h1>
 <div class="admonition info">
 <p class="admonition-title">Installation</p>
-<p>In this document we describe how to configure Polarion to display the Work Item Gantt. 
+<p>In this document, we describe how to configure Polarion to display the Work Item Gantt. 
 We suppose the plugin is already installed.
-If you look for the the plugin installation instructions you will find them in the distribution zip file.</p>
+If you look for the plugin installation instructions you will find them in the distribution zip file.</p>
 </div>
 <h2 id="widget">Widget</h2>
 <p>The Work Item Gantt is implemented as standard Polarion widget.</p>
 <p><img alt="Gantt" src="../img/gantt-widget-add.png" /></p>
 <p>All the configuration options are described on <a href="../widget/#widget-parameters">Widget Parameters</a> page.</p>
 <h2 id="display-modes">Display Modes</h2>
-<p>You have two options how to display the Gantt widget.</p>
+<p>You have two options on how to display the Gantt widget.</p>
 <ol>
 <li>
 <p>Setup Gantt as Full-Report view</p>
@@ -471,7 +485,7 @@ If you look for the the plugin installation instructions you will find them in t
 </ol>
 <h3 id="full-report-gantt">Full Report Gantt</h3>
 <p>The most common approach to show <em>Work Items Gantt</em> is to create a single LiveReport page, call it for example <em>Gantt</em>, and put the <em>Work Items Gantt Widget</em> as single widget there.</p>
-<p>In this case we recommend to activate following widget property:</p>
+<p>In this case, we recommend to activate the following widget property:</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'yes'</li>
 </ul>
@@ -479,16 +493,16 @@ If you look for the the plugin installation instructions you will find them in t
 <p>Please make sure there are no additional empty paragraphs or other whitespace content around the widget.</p>
 <p><img alt="Gantt Maximize Widget Property" src="../img/gantt-max-property.png" /></p>
 <h3 id="gantt-as-widget">Gantt as Widget</h3>
-<p>Sometimes it is more useful to embed the Gantt widget to an existing reports, together with other reporting widgets. In such case make sure that <code>Maximize</code> property is turned off.</p>
+<p>Sometimes it is more useful to embed the Gantt widget to an existing report, together with other reporting widgets. In such case make sure that <code>Maximize</code> property is turned off.</p>
 <ul>
 <li><code>Advanced</code> &gt;  <code>Maximize</code> - set the Maximize property of the widget to 'no'</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Currently it is possible to have only one Work Item Gantt widget on a page. Please do not add more of them on a single page.</p>
+<p>Currently, it is possible to have only one Work Item Gantt widget on a page. Please do not add more of them on a single page.</p>
 </div>
 <h2 id="data-mapping">Data Mapping</h2>
-<p>Once you have the widget on your page, you need to configure where to store scheduling informations. The gantt model is storing following data:</p>
+<p>Once you have the widget on your page, you need to configure where to store scheduling information. The Gantt model is storing the following data:</p>
 <ul>
 <li>Start Date (Date)</li>
 <li>Duration (Number of days)</li>
@@ -497,25 +511,47 @@ If you look for the the plugin installation instructions you will find them in t
 <p>You can configure the mapping using the Advanced Widget parameters:</p>
 <ul>
 <li>
-<p><code>Start Field</code> -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.</p>
+<p><code>Start Field</code> -  the name of the custom field, that stores the information when the work item starts. </p>
+<p>The type of the custom field can be any of these: Date, Date-Time or String. </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.</p>
 </li>
 <li>
-<p><code>Duration Field</code> -  the name of the custom field, that holds when the work item duration as number of days. It can be any of: Integer or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use an Integer custom field.</p>
+<p><code>Duration Field</code> -  the name of the custom field, that stores the information about the work item duration as the number of days. </p>
+<p>The type of the custom field can be any of these: Integer or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using an Integer custom field.</p>
 </li>
 <li>
-<p><code>Progress Field</code> - the name of the custom field, that holds when the work item progress as float (if you multiple by 100 you get % of completion). It can be any of: Float or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Float custom field.</p>
+<p><code>Progress Field</code> - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). </p>
+<p>The type of the custom field can be any of these: Float or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.</p>
 </li>
 </ul>
 <h2 id="hierarchy">Hierarchy</h2>
-<p>The hierarchy of items on the gantt chart is derived from work item links. This is controlled by <code>Parent Role</code> widget parameter:</p>
+<p>The hierarchy of items on the Gantt chart is derived from work item links. This is controlled by <code>Parent Role</code> widget parameter:</p>
 <ul>
 <li><code>Parent Role</code> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</li>
 </ul>
 <h2 id="dependencies">Dependencies</h2>
 <p>The dependency links are also derived from the work item links. This is controlled by <code>Dependency Role</code> widget parameter:</p>
 <ul>
-<li><code>Dependency Role</code> - select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.</li>
+<li>
+<p><code>Dependency Role</code> - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. </p>
+<p>If you select multiple link roles, the first role is used when creating new links.</p>
+</li>
 </ul>
+<p>If you do not want to let the user create dependency links, put following property to <code>Advanced</code> &gt; <code>Additional Script</code> parameter:</p>
+<div class="codehilite"><pre><span></span><span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">drag_links</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+</pre></div>
+
+
+<h2 id="time-range">Time Range</h2>
+<p>By default the Gantt chart shows the time range as small as to fit the items.</p>
+<p>If you want to set the start and end date manually, for example to allow the dragging of the items to future, set following properties  in  <code>Advanced</code> &gt; <code>Additional Script</code> (both need to be set).</p>
+<div class="codehilite"><pre><span></span><span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">start_date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">end_date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">08</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</pre></div>
+
+
 <h2 id="more">More</h2>
 <p>There are more configuration options available, see <a href="../widget/#widget-parameters">Widget Parameters</a> page for the full list. </p>
                 
