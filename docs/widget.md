@@ -5,34 +5,50 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 ![Gantt](img/gantt-widget-add.png)
 
 !!! info
-	Currently it is possible to have only one Work Item Gantt widget on a page.
+    Currently, it is possible to have only one Work Item Gantt widget on a page.
 
 ## Widget Parameters 
 
-
-
-* `Work Items` - a standard data set parameter,select what work items you want to see on your the gantt chart.
+* `Work Items` - a standard data set parameter, select what work items you want to see on your Gantt chart.
 
 * `Parent Role` - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.
 
-* `Dependency Role` - select what Work Item link roles should be used to detect the Depends-on relationships. If empty, no dependencies will be shown. If you select multiple link roles, the first role is used when creating new links.
+* `Dependency Role` - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. 
 
-* `Load Children` - define how many levels of child items should be traversed and added to the list in addition to the items from 'Work Items' attributes. Zero (0) means that no additional items are shown.
+    If you select multiple link roles, the first role is used when creating new links.
 
-* `Show Unplanned` - click on 'no' to hide all the work items that do not have the start field set. If you keep it set to 'yes', such tasks will be in the list, scheduled for 'Today', marked by gray color. 
+* `Load Children` - define how many levels of child items should be traversed and added to the list in addition to the items from `Work Items` date set parameter. 
+    
+    Zero (0) means that no additional items are shown.
 
-* `Drag Children` - To allow dragging children when the user is dragging their parent's task, set this property to 'yes'
+* `Show Unplanned` - click on `no` to hide all the work items that do not have the `Start Field` set. 
+
+    If you keep it set to `yes`, such tasks will be in the list, scheduled for 'Today', and marked by gray color. 
+
+* `Drag Children` -  configure if you want the child items to be rescheduled when dragging their parent's item.
 
 
 ### Advanced
 
-* `Maximize View` -  configure if the widget should expand the over the full working area. See [Setup](../setup/).
+* `Maximize View` -  configure if the widget should expand its content over the full working area. See [Setup](../setup/).
 
-* `Start Field` -  the name of the custom field, that holds when the work item starts. It can be any of: Date, Date-Time or String. If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Date (Only) custom field.
+* `Start Field` -  the name of the custom field, that stores the information when the work item starts. 
 
-* `Duration Field` -  the name of the custom field, that holds when the work item duration as number of days. It can be any of: Integer or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use an Integer custom field.
+	The type of the custom field can be any of these: Date, Date-Time or String. 
+	
+	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.
 
-* `Progress Field` - the name of the custom field, that holds when the work item progress as float (if you multiple by 100 you get % of completion). It can be any of: Float or String.  If such custom fields does not exists, the value will be stored in String ad-hoc custom fields. For production use we recommend to use a Float custom field.
+* `Duration Field` -  the name of the custom field, that stores the information about the work item duration as the number of days. 
+
+	The type of the custom field can be any of these: Integer or String.  
+	
+	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using an Integer custom field.
+
+* `Progress Field` - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). 
+
+	The type of the custom field can be any of these: Float or String.  
+	
+	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.
 
 * `Sort by` -  the sort criteria to sort the top level work items.
 
@@ -41,13 +57,13 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
     + 'W' - week
     + 'M' - Month
 
-* `Max Items` -  (Integer) limmits the maximum number of work items loaded into the gantt view.
+* `Max Items` -  (Integer) limits the maximum number of work items loaded into the Gantt view.
 
 ### Additional Script
 
-You can add additional DHTMLX Gantt javascript configuration options, e.g.:
+You can add additional Gantt javascript configuration options, e.g.:
 
-``` python
+``` 
 
     gantt.config.start_date = new Date(2018, 12, 10);
     gantt.config.end_date = new Date(2020, 08, 20);

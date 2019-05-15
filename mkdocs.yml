@@ -8,12 +8,15 @@ nav:
     - Widget: widget.md
     - Release Notes: changelog.md
     - About: about.md
+
 theme:
   name: 'material'
   font: false
   palette:
     primary: 'amber'
     accent: 'blue'
+  favicon: img/favicon.png
+    
 
 markdown_extensions:
   - admonition
@@ -22,3 +25,6 @@ markdown_extensions:
 google_analytics:
   - 'UA-125777914-2'
   - 'auto'
+  
+copyright: 'Copyright &copy; 2019 Nextedy Systems'
+  
