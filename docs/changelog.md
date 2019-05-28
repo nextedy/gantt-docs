@@ -13,6 +13,7 @@
 * Documentation improvements
 * Script support added to decorate a task based on work item properties, see Widget > Task Script
 * Infinite loop on parent links (should not happen in Polarion) does not cause gantt to fail (but data do not load).
+* Project style support (via Task Script)
 
 
 ### 1.0.1 <small>_ May 15, 2019</small>
