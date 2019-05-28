@@ -499,7 +499,48 @@ You have two variables defined:</p>
 <div class="codehilite"><pre><span></span><span class="k">if</span><span class="ss">(</span><span class="nv">wi</span>.<span class="nv">type</span>.<span class="nv">id</span><span class="o">===</span><span class="s1">&#39;</span><span class="s">capability</span><span class="s1">&#39;</span><span class="ss">)</span>{
     <span class="nv">task</span>.<span class="nv">type</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">project</span><span class="s1">&#39;</span><span class="c1">;</span>
     <span class="nv">task</span>.<span class="nv">color</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">green</span><span class="s1">&#39;</span><span class="c1">;</span>
+    <span class="nv">task</span>.<span class="nv">getFields</span><span class="ss">()</span>.<span class="nv">put</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">isCapability</span><span class="s2">&quot;</span>,<span class="nv">true</span><span class="ss">)</span><span class="c1">;</span>
+}<span class="k">else</span>{
+    <span class="nv">task</span>.<span class="nv">getFields</span><span class="ss">()</span>.<span class="nv">put</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">isCapability</span><span class="s2">&quot;</span>,<span class="nv">false</span><span class="ss">)</span><span class="c1">;</span>
 }
+</pre></div>
+
+
+<p>You can access a <code>Task.class</code> definition bellow. </p>
+<div class="codehilite"><pre><span></span><span class="nv">public</span> <span class="nv">class</span> <span class="nv">Task</span>  {
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">id</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">text</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">Date</span> <span class="nv">start_date</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">int</span> <span class="nv">duration</span> <span class="o">=</span> <span class="nv">Integer</span>.<span class="nv">getInteger</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">nextedy.gantt.default.task_duration</span><span class="s2">&quot;</span>,<span class="mi">10</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">float</span> <span class="nv">progress</span> <span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">parent</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">type</span> <span class="c1">;    </span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">url</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">itemId</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">projectId</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">boolean</span> <span class="nv">readonly</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">boolean</span> <span class="nv">unplanned</span> <span class="o">=</span> <span class="nv">false</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">boolean</span> <span class="nv">open</span> <span class="o">=</span> <span class="o">!</span><span class="nv">Boolean</span>.<span class="nv">getBoolean</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">nextedy.gantt.default.do_expand</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">public</span> <span class="nv">String</span> <span class="nv">color</span> <span class="o">=</span> <span class="nv">System</span>.<span class="nv">getProperty</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">nextedy.gantt.default.task_color</span><span class="s2">&quot;</span>,<span class="nv">null</span><span class="ss">)</span><span class="c1">;</span>
+
+    <span class="nv">private</span> <span class="nv">Map</span><span class="o">&lt;</span><span class="nv">String</span>,<span class="nv">String</span><span class="o">&gt;</span> <span class="nv">fields</span> <span class="o">=</span> <span class="nv">new</span> <span class="nv">HashMap</span><span class="o">&lt;</span><span class="nv">String</span>, <span class="nv">String</span><span class="o">&gt;</span><span class="ss">()</span><span class="c1">;</span>
+
+    <span class="nv">public</span> <span class="nv">Map</span><span class="o">&lt;</span><span class="nv">String</span>, <span class="nv">String</span><span class="o">&gt;</span> <span class="nv">getFields</span><span class="ss">()</span> {
+        <span class="k">return</span> <span class="nv">fields</span><span class="c1">;</span>
+    }
+
+    <span class="nv">public</span> <span class="nv">void</span> <span class="nv">setFields</span><span class="ss">(</span><span class="nv">Map</span><span class="o">&lt;</span><span class="nv">String</span>, <span class="nv">String</span><span class="o">&gt;</span> <span class="nv">fields</span><span class="ss">)</span> {
+        <span class="nv">this</span>.<span class="nv">fields</span> <span class="o">=</span> <span class="nv">fields</span><span class="c1">;</span>
+    }
+
+}
+</pre></div>
+
+
+<p>As you can see, you can store the additional information in fields map, and use it e.g. when configuring the actual tooltip in <code>Gantt Config Script</code> (experts only).</p>
+<div class="codehilite"><pre><span></span><span class="nv">gantt</span>.<span class="nv">templates</span>.<span class="nv">rightside_text</span> <span class="o">=</span> <span class="nv">function</span><span class="ss">(</span><span class="nv">start</span>, <span class="k">end</span>, <span class="nv">task</span><span class="ss">)</span>{
+    <span class="k">return</span>  <span class="s2">&quot;</span><span class="s">Capability: &lt;b&gt;</span><span class="s2">&quot;</span><span class="o">+</span><span class="nv">task</span>.<span class="nv">fields</span>.<span class="nv">isCapability</span><span class="o">+</span><span class="s2">&quot;</span><span class="s">&lt;/b&gt;</span><span class="s2">&quot;</span><span class="c1">;</span>
+}<span class="c1">;</span>
 </pre></div>
                 
                   
