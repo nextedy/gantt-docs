@@ -43,4 +43,5 @@
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
 
 
+28-May-2019 17:20
 
