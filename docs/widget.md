@@ -105,5 +105,48 @@ See following example, that changes type of the task to `project` if the type of
 if(wi.type.id==='capability'){
 	task.type='project';
 	task.color='green';
+    task.getFields().put("isCapability",true);
+}else{
+    task.getFields().put("isCapability",false);
 }
+```
+
+You can access a `Task.class` definition bellow. 
+
+```
+public class Task  {
+    public String id;
+    public String text;
+    public Date start_date;
+    public int duration = Integer.getInteger("nextedy.gantt.default.task_duration",10);
+    public float progress ;
+    public String parent;
+    public String type ;	
+    public String url;
+    public String itemId;
+    public String projectId;
+    public boolean readonly;
+    public boolean unplanned = false;
+    public boolean open = !Boolean.getBoolean("nextedy.gantt.default.do_expand");
+    public String color = System.getProperty("nextedy.gantt.default.task_color",null);
+    
+    private Map<String,String> fields = new HashMap<String, String>();
+
+	public Map<String, String> getFields() {
+		return fields;
+	}
+
+	public void setFields(Map<String, String> fields) {
+		this.fields = fields;
+	}
+    
+}
+```
+
+As you can see, you can store the additional information in fields map, and use it e.g. when configuring the actual tooltip in `Gantt Config Script` (experts only).
+
+```
+gantt.templates.rightside_text = function(start, end, task){
+    return  "Capability: <b>"+task.fields.isCapability+"</b>";
+};
 ```
