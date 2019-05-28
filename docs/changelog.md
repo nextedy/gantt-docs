@@ -1,8 +1,11 @@
 # Release Notes
 
+
 ## Changelog
 
 !!! info
+    The latest plugin distribution is available [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip)
+    
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
 
