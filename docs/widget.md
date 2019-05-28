@@ -28,7 +28,7 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 * `Drag Children` -  configure if you want the child items to be rescheduled when dragging their parent's item.
 
 
-### Advanced
+## Advanced Parameters
 
 * `Maximize View` -  configure if the widget should expand its content over the full working area. See [Setup](../setup/).
 
