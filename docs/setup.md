@@ -6,7 +6,7 @@
     
     If you look for the plugin installation instructions you will find them in the distribution zip file.
     
-    The latest distribution is available [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt_1.0.1.zip)
+    The latest distribution is available [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip)
 
 ## Widget
 

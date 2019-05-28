@@ -59,7 +59,7 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
 * `Max Items` -  (Integer) limits the maximum number of work items loaded into the Gantt view.
 
-### Additional Script
+### Gantt Config Script
 
 You can add additional Gantt javascript configuration options, e.g.:
 
@@ -92,4 +92,18 @@ You can add additional Gantt javascript configuration options, e.g.:
         {unit:"day", step:1, date:"%D", css:daysStyle }
         ];
 ```
+### Task Script 
+You can add a server side  javascript (executed on server) to decorate the task based on the work item properties.
+You have two variables defined:
 
+*  `task` of type `com.nextedy.polarion.gantt.model.Task`
+*  `wi` of type `com.polarion.alm.tracker.model.IWorkItem` 
+
+See following example, that changes type of the task to `project` if the type of the work item in Polarion is `capability`. 
+
+```
+if(wi.type.id==='capability'){
+	task.type='project';
+	task.color='green';
+}
+```
