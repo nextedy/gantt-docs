@@ -495,7 +495,7 @@ You have two variables defined:</p>
 <li><code>task</code> of type <code>com.nextedy.polarion.gantt.model.Task</code></li>
 <li><code>wi</code> of type <code>com.polarion.alm.tracker.model.IWorkItem</code> </li>
 </ul>
-<p>See following example, that changes type of the task to <code>project</code> if the type of the work item in Polarion is <code>capability</code>. </p>
+<p>See following example, that changes type of the task to <code>project</code> if the Work Item Type in Polarion is <code>capability</code>. </p>
 <div class="codehilite"><pre><span></span><span class="k">if</span><span class="ss">(</span><span class="nv">wi</span>.<span class="nv">type</span>.<span class="nv">id</span><span class="o">===</span><span class="s1">&#39;</span><span class="s">capability</span><span class="s1">&#39;</span><span class="ss">)</span>{
     <span class="nv">task</span>.<span class="nv">type</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">project</span><span class="s1">&#39;</span><span class="c1">;</span>
     <span class="nv">task</span>.<span class="nv">color</span><span class="o">=</span><span class="s1">&#39;</span><span class="s">green</span><span class="s1">&#39;</span><span class="c1">;</span>
