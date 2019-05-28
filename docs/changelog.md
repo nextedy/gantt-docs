@@ -40,7 +40,6 @@
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
-* Infinite loop on parent links (should not happen in Polarion) not handled well.
 
 
 
