@@ -103,8 +103,7 @@ See following example, that changes type of the task to `project` if the Work It
 
 ```
 if(wi.type.id==='capability'){
-	task.type='project';
-	task.color='green';
+    task.color='green';
     task.getFields().put("isCapability",true);
 }else{
     task.getFields().put("isCapability",false);

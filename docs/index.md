@@ -18,6 +18,14 @@ The Management of project and task dependencies is another common task. Just sta
 
 ![Dependencies](img/gantt-drag-dependency-link.gif)
 
+## Project Types
+
+Sometimes the task schedule should be derivered from the children, this is exactly what is covered by `project` type. (Task Script needs to be used to configure what work items are of type `project`
+
+![Projects](img/gantt-projects.gif)
+
+
+
 ## Storing Data
 
 You can fully configure what work item custom fields are used to store the Gantt information, See Widget  > [Advanced Properties](./widget/#advanced). 
