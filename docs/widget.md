@@ -99,7 +99,7 @@ You have two variables defined:
 *  `task` of type `com.nextedy.polarion.gantt.model.Task`
 *  `wi` of type `com.polarion.alm.tracker.model.IWorkItem` 
 
-See following example, that changes type of the task to `project` if the type of the work item in Polarion is `capability`. 
+See following example, that changes type of the task to `project` if the Work Item Type in Polarion is `capability`. 
 
 ```
 if(wi.type.id==='capability'){
