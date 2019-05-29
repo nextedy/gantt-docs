@@ -25,7 +25,3 @@ Sometimes the task schedule should be derivered from the children, this is exact
 ![Projects](img/gantt-projects.gif)
 
 
-
-## Storing Data
-
-You can fully configure what work item custom fields are used to store the Gantt information, See Widget  > [Advanced Properties](./widget/#advanced). 

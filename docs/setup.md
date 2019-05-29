@@ -1,14 +1,14 @@
 # Setup
 
-!!! info "Installation"
-    In this document, we describe how to configure Polarion to display the Work Item Gantt. 
-    We suppose the plugin is already installed.
-    
-    If you look for the plugin installation instructions you will find them in the distribution zip file.
-    
-    The latest distribution is available [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip)
+## Installation
+	
+1.  Download the latest distribution from [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip)
+2.  Copy `com.nextedy.polarion.gantt` folder into `POLARION_INSTALL_LOCATION/polarion/extension` folder.
+3.  If you already have production license, please copy the `gantt_lic.json` file to `[POLARION_INSTALL]/polarion/license`
+4.  Restart Polarion server
 
-## Widget
+
+## Configure Gantt View
 
 The Work Item Gantt is implemented as standard Polarion widget.
 
@@ -95,7 +95,7 @@ The dependency links are also derived from the work item links. This is controll
 
     If you select multiple link roles, the first role is used when creating new links.
     
-If you do not want to let the user create dependency links, put following property to `Advanced` > `Additional Script` parameter:
+If you do not want to let the user create dependency links, put following property to `Advanced` > `Gantt Config Script` parameter:
 
 	gantt.config.drag_links = false;		
 	
@@ -103,7 +103,7 @@ If you do not want to let the user create dependency links, put following proper
 
 By default the Gantt chart shows the time range as small as to fit the items.
 
-If you want to set the start and end date manually, for example to allow the dragging of the items to future, set following properties  in  `Advanced` > `Additional Script` (both need to be set).
+If you want to set the start and end date manually, for example to allow the dragging of the items to future, set following properties  in  `Advanced` > `Gantt Config Script` (both need to be set).
 
 	gantt.config.start_date = new Date(2018, 12, 10);
 	gantt.config.end_date = new Date(2020, 08, 20);

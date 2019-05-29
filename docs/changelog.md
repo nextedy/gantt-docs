@@ -9,6 +9,16 @@
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
 
+### 1.0.3 <small>_ May 29, 2019 12:20</small>
+* Action menu added
+* Refresh action to reload the Gantt
+* Drag children control - add an option to turn on/off drag children instantly on Gantt, the widget property  holds the default
+* Today Marker - add marker for today + scroll to today
+
+![Gantt-menu](img/gantt-menu.png)
+
+
+
 ### 1.0.2 <small>_ May 28, 2019 17:20</small>
 * Documentation improvements
 * Script support added to decorate a task based on work item properties, see Widget > Task Script
@@ -29,9 +39,7 @@
 
 ## TODO
 
-* **Refresh** - refresh action to reload the Gantt
-* **Drag children control** - add an option to turn on/off drag children instantly on Gantt, the widget property would hold the default
-* **Today** - add marker for today + scroll to today
+
 * **Readonly** - add widget property to mark Gantt read-only
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
 	* Partially possibly in 1.0.2 with `Task Script`
