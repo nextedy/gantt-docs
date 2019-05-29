@@ -8,6 +8,7 @@ nav:
     - Widget: widget.md
     - Release Notes: changelog.md
     - Pricing: pricing.md
+    - Support: support.md
     - About: about.md
 
 theme:

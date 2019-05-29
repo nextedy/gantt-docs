@@ -9,11 +9,12 @@
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
 
-### 1.0.3 <small>_ May 29, 2019 12:20</small>
+### 1.0.3 <small>_ May 29, 2019 17:45</small>
 * Action menu added
 * Refresh action to reload the Gantt
 * Drag children control - add an option to turn on/off drag children instantly on Gantt, the widget property  holds the default
 * Today Marker - add marker for today + scroll to today
+* Set Scale - add an option to set the timeline scale instantly on Gantt, the widget property would hold the default.
 
 ![Gantt-menu](img/gantt-menu.png)
 
@@ -45,7 +46,6 @@
 	* Partially possibly in 1.0.2 with `Task Script`
 * **Item Colors based on Type** - make it possible to color the tasks based on item type.
 	* Partially possibly in 1.0.2 with `Task Script`
-* **Set Scale control** - add an option to set the timeline scale instantly on Gantt, the widget property would hold the default.
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
