@@ -240,8 +240,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#widget" title="Widget" class="md-nav__link">
-    Widget
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-gantt-view" title="Configure Gantt View" class="md-nav__link">
+    Configure Gantt View
   </a>
   
 </li>
@@ -349,6 +356,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../pricing/" title="Pricing" class="md-nav__link">
+      Pricing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../about/" title="About" class="md-nav__link">
       About
     </a>
@@ -376,8 +395,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#widget" title="Widget" class="md-nav__link">
-    Widget
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-gantt-view" title="Configure Gantt View" class="md-nav__link">
+    Configure Gantt View
   </a>
   
 </li>
@@ -462,14 +488,14 @@
                 
                 
                 <h1 id="setup">Setup</h1>
-<div class="admonition info">
-<p class="admonition-title">Installation</p>
-<p>In this document, we describe how to configure Polarion to display the Work Item Gantt. 
-We suppose the plugin is already installed.</p>
-<p>If you look for the plugin installation instructions you will find them in the distribution zip file.</p>
-<p>The latest distribution is available <a href="https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip">here</a></p>
-</div>
-<h2 id="widget">Widget</h2>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Download the latest distribution from <a href="https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip">here</a></li>
+<li>Copy <code>com.nextedy.polarion.gantt</code> folder into <code>POLARION_INSTALL_LOCATION/polarion/extension</code> folder.</li>
+<li>If you already have production license, please copy the <code>gantt_lic.json</code> file to <code>[POLARION_INSTALL]/polarion/license</code></li>
+<li>Restart Polarion server</li>
+</ol>
+<h2 id="configure-gantt-view">Configure Gantt View</h2>
 <p>The Work Item Gantt is implemented as standard Polarion widget.</p>
 <p><img alt="Gantt" src="../img/gantt-widget-add.png" /></p>
 <p>All the configuration options are described on <a href="../widget/#widget-parameters">Widget Parameters</a> page.</p>
@@ -540,14 +566,14 @@ We suppose the plugin is already installed.</p>
 <p>If you select multiple link roles, the first role is used when creating new links.</p>
 </li>
 </ul>
-<p>If you do not want to let the user create dependency links, put following property to <code>Advanced</code> &gt; <code>Additional Script</code> parameter:</p>
+<p>If you do not want to let the user create dependency links, put following property to <code>Advanced</code> &gt; <code>Gantt Config Script</code> parameter:</p>
 <div class="codehilite"><pre><span></span><span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">drag_links</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
 </pre></div>
 
 
 <h2 id="time-range">Time Range</h2>
 <p>By default the Gantt chart shows the time range as small as to fit the items.</p>
-<p>If you want to set the start and end date manually, for example to allow the dragging of the items to future, set following properties  in  <code>Advanced</code> &gt; <code>Additional Script</code> (both need to be set).</p>
+<p>If you want to set the start and end date manually, for example to allow the dragging of the items to future, set following properties  in  <code>Advanced</code> &gt; <code>Gantt Config Script</code> (both need to be set).</p>
 <div class="codehilite"><pre><span></span><span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">start_date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
 <span class="n">gantt</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">end_date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">08</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
 </pre></div>
