@@ -2,7 +2,7 @@
 
 The pricing model is easy and transparent.  
 
-* The number of licensed users need  match the number of licensed users on your Polarion server.
+* The number of licensed users needs to match the number of licensed users on your Polarion server.
 * The license is perpetual (pay once and use a program indefinitely).
 * 1st year of Maintenance & Support is included. 
 * Subsequent maintenance price is 20% of base perpetual license price. 
