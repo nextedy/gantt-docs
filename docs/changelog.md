@@ -10,12 +10,16 @@
     <https://nextedy.github.io/gantt-docs/changelog/>
 
 ### 1.5.0 <small>_ July 1, 2019 07:45</small>
-* Big release with lots of customer enhancements and addition of Plans Gantt Widget added for free justify the big shift on version number.
-* Support for duration fields
-* Compare actual vs planned
+
+* Big release with many customer enhancements and with addition of *Plans Gantt Widget* (added for free) justifies the big shift on version number.
+* Support for duration fields in DurationTime format (converts to days only)
+* Compare actual vs planned (requires Task Script to configure how to load the original schedule)
+
+!!! warning
+    Due to major refactoring (as we were adding support for Plans data type), the widget needs to be reconfigured when you update from 1.0 to 1.5. This shall not happen in the future versions. This was agreed upfront with paying customers.
+    
 
 ![Gantt-menu](img/gantt-versioning.gif)
-
 
 
 ### 1.0.3 <small>_ May 29, 2019 17:45</small>
@@ -26,7 +30,6 @@
 * Set Scale - add an option to set the timeline scale instantly on Gantt, the widget property would hold the default.
 
 ![Gantt-menu](img/gantt-menu.png)
-
 
 
 ### 1.0.2 <small>_ May 28, 2019 17:20</small>
@@ -48,8 +51,7 @@
 *  After couple of months of development and use in several customer projects we officially release the public version 1.0.0.
 
 ## TODO
-
-
+	
 * **Readonly** - add widget property to mark Gantt read-only
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
 	* Partially possibly in 1.0.2 with `Task Script`
