@@ -9,6 +9,15 @@
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
 
+### 1.5.0 <small>_ July 1, 2019 07:45</small>
+* Big release with lots of customer enhancements and addition of Plans Gantt Widget added for free justify the big shift on version number.
+* Support for duration fields
+* Compare actual vs planned
+
+![Gantt-menu](img/gantt-versioning.gif)
+
+
+
 ### 1.0.3 <small>_ May 29, 2019 17:45</small>
 * Action menu added
 * Refresh action to reload the Gantt

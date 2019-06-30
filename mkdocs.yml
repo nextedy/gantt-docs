@@ -15,8 +15,8 @@ theme:
   name: 'material'
   font: false
   palette:
-    primary: 'amber'
-    accent: 'blue'
+    primary: 'blue'
+    accent: 'red'
   favicon: img/favicon.png
     
 

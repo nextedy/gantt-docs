@@ -11,26 +11,33 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
 * `Work Items` - a standard data set parameter, select what work items you want to see on your Gantt chart.
 
+* `Sort by` -  the sort criteria to sort the top level work items.
+
+* `Load Children` - define how many levels of child items should be traversed and added to the list in addition to the items from `Work Items` date set parameter. 
+    
+    Zero (0) means that no additional items are shown.
+    
+* `Show Unplanned` - click on `no` to hide all the work items that do not have the `Start Field` set. 
+
+    If you keep it set to `yes`, such tasks will be in the list, scheduled for 'Today', and marked by gray color. 
+
+* `Scale ( D || W || M )` -  configures the scale of the timeline.   Values are: 
+    + 'D' - day
+    + 'W' - week
+    + 'M' - Month
+
 * `Parent Role` - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.
 
 * `Dependency Role` - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. 
 
     If you select multiple link roles, the first role is used when creating new links.
 
-* `Load Children` - define how many levels of child items should be traversed and added to the list in addition to the items from `Work Items` date set parameter. 
-    
-    Zero (0) means that no additional items are shown.
-
-* `Show Unplanned` - click on `no` to hide all the work items that do not have the `Start Field` set. 
-
-    If you keep it set to `yes`, such tasks will be in the list, scheduled for 'Today', and marked by gray color. 
-
-* `Drag Children` -  configure if you want the child items to be rescheduled when dragging their parent's item.
-
 
 ## Advanced Parameters
 
 * `Maximize View` -  configure if the widget should expand its content over the full working area. See [Setup](../setup/).
+
+* `Drag Children` -  configure if you want the child items to be rescheduled when dragging their parent's item.
 
 * `Start Field` -  the name of the custom field, that stores the information when the work item starts. 
 
@@ -50,12 +57,6 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 	
 	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.
 
-* `Sort by` -  the sort criteria to sort the top level work items.
-
-* `Scale ( D || W || M )` -  configures the scale of the timeline.   Values are: 
-    + 'D' - day
-    + 'W' - week
-    + 'M' - Month
 
 * `Max Items` -  (Integer) limits the maximum number of work items loaded into the Gantt view.
 

@@ -2,9 +2,63 @@
 
 *Work Items Gantt* brings the interactive high-level project planning & scheduling to Polarion ALM. 
 
+<div id="download-button" style="display:none">
+<style>
+.mdc-button {	
+	color:white;
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 8px 0 8px;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    height: 36px;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color:  #3e91fe;
+    cursor:pointer;  
+}
+</style>
+<center >
+<a href="https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip">
+<button class="mdc-button">Download Now!</button>
+</a>
+</center>
+<br>
+</div>
+<script>
+if (window.location.href.indexOf("nextedy.github.io") != -1){
+	document.getElementById("download-button").style.display="block";
+}
+</script>
+
 Interactive drag & drop enabled Gantt chart widget provides unique capabilities to expose the standard Work Items (such as Features, Epics, Objectives, ...) as micro projects in a visually appealing way and perform various operations easily and efficiently.
 
+<a href="https://youtu.be/9D_djgsCIac">
+<center>
+**Play Overview Video**
+</center>
 ![Gantt Screenshot](img/gantt-overall.png)
+</a>
 
 ## Adjust Schedule
 
