@@ -428,11 +428,7 @@
 <p><code>Work Items</code> - a standard data set parameter, select what work items you want to see on your Gantt chart.</p>
 </li>
 <li>
-<p><code>Parent Role</code> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</p>
-</li>
-<li>
-<p><code>Dependency Role</code> - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. </p>
-<p>If you select multiple link roles, the first role is used when creating new links.</p>
+<p><code>Sort by</code> -  the sort criteria to sort the top level work items.</p>
 </li>
 <li>
 <p><code>Load Children</code> - define how many levels of child items should be traversed and added to the list in addition to the items from <code>Work Items</code> date set parameter. </p>
@@ -443,13 +439,28 @@
 <p>If you keep it set to <code>yes</code>, such tasks will be in the list, scheduled for 'Today', and marked by gray color. </p>
 </li>
 <li>
-<p><code>Drag Children</code> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
+<p><code>Scale ( D || W || M )</code> -  configures the scale of the timeline.   Values are: </p>
+<ul>
+<li>'D' - day</li>
+<li>'W' - week</li>
+<li>'M' - Month</li>
+</ul>
+</li>
+<li>
+<p><code>Parent Role</code> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</p>
+</li>
+<li>
+<p><code>Dependency Role</code> - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. </p>
+<p>If you select multiple link roles, the first role is used when creating new links.</p>
 </li>
 </ul>
 <h2 id="advanced-parameters">Advanced Parameters</h2>
 <ul>
 <li>
 <p><code>Maximize View</code> -  configure if the widget should expand its content over the full working area. See <a href="../setup/">Setup</a>.</p>
+</li>
+<li>
+<p><code>Drag Children</code> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
 </li>
 <li>
 <p><code>Start Field</code> -  the name of the custom field, that stores the information when the work item starts. </p>
@@ -465,17 +476,6 @@
 <p><code>Progress Field</code> - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). </p>
 <p>The type of the custom field can be any of these: Float or String.  </p>
 <p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.</p>
-</li>
-<li>
-<p><code>Sort by</code> -  the sort criteria to sort the top level work items.</p>
-</li>
-<li>
-<p><code>Scale ( D || W || M )</code> -  configures the scale of the timeline.   Values are: </p>
-<ul>
-<li>'D' - day</li>
-<li>'W' - week</li>
-<li>'M' - Month</li>
-</ul>
 </li>
 <li>
 <p><code>Max Items</code> -  (Integer) limits the maximum number of work items loaded into the Gantt view.</p>
