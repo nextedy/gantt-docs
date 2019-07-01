@@ -150,3 +150,8 @@ gantt.templates.rightside_text = function(start, end, task){
     return  "Capability: <b>"+task.fields.isCapability+"</b>";
 };
 ```
+
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+	FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Nextedy+Help+%26+Support+Center&screenshot=no&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "black", "buttonBg": "#2196f3", "alignment": "4", "offset": "235px", "formHeight": "500px", "screenshot": "no", "captcha": "yes", "url": "https://nextedy.freshdesk.com"} );
+</script>
