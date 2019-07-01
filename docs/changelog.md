@@ -9,7 +9,7 @@
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
 
-### 1.5.0 <small>_ July 1, 2019 07:45</small>
+### 1.5.0 <small>_ July 1, 2019 00:01</small>
 
 * Big release with many customer enhancements and with addition of *Plans Gantt Widget* (added for free) justifies the big shift on version number.
 * Support for duration fields in DurationTime format (converts to days only)
