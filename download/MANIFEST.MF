@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.nextedy.polarion.gantt;singleton:=true
+Bundle-Name: Nextedy Gantt Charts
+Bundle-Version: 1.5.0.201907011535
+Bundle-ClassPath: gantt.jar,webapp/WEB-INF/gson-2.8.5.jar
+Require-Bundle: com.polarion.portal.tomcat,com.polarion.alm.ui,com.pol
+ arion.alm.tracker,org.eclipse.core.runtime;bundle-version="3.1.2"
+Bundle-ManifestVersion: 2
+Bundle-Vendor: NEXTEDY SYSTEMS
+
+
