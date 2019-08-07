@@ -449,9 +449,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #888;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 /* The Close Button */
@@ -475,6 +475,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius:4px;
+    height:36px;
     }
 </style>
 
@@ -486,18 +487,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <div class="modal-content">
     <span class="close">&times;</span>
     <h1>Download <b>Work Items Gantt</b></h1>
-    Please fill in your email address and we will share the download link with you.
+    Please fill in your email address to download the installation package.
     <center>
     <form onSubmit="downloadDist()">
     <input type="email"  id="email" class="emailinput" placeholder="Enter your email." />
     <input type="submit" class="mdc-button" value="Submit" />
     </form>
+    <span style="font-size: 75%;color: gray;">
+    By downloading the product you consent to and fully accept our <a target="_blank" href="https://gantt.nextedy.com/download/LICENSE.pdf">License Terms</a>.
+    </span>
     </center>
 
   </div>
 </div>
 
-<center >
+<center ><br/>
 <a onClick="openDownload()">
 <button class="mdc-button">Download Now!</button>
 </a>
