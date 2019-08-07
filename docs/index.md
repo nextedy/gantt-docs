@@ -15,7 +15,7 @@
     letter-spacing: .0892857143em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0 8px 0 8px;
+    padding: 4px 8px 0 8px;
     display: inline-flex;
     position: relative;
     align-items: center;
@@ -38,13 +38,88 @@
     cursor:pointer;  
 }
 </style>
-<center >
-<a href="https://gantt.nextedy.com/download/work_items_gantt.zip">
-<button class="mdc-button">Download Now!</button>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  max-width: 650px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.emailinput {
+    border: 1px solid #89b1dc;
+    padding: 10px;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius:4px;
+    height:36px;
+    }
+</style>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Download <b>Work Items Gantt</b></h1>
+    Please fill in your email address to download the installation package.
+    <center>
+    <form onSubmit="downloadDist()">
+    <input type="email"  id="email" class="emailinput" placeholder="Enter your email." />
+    <input type="submit" class="mdc-button" value="Submit" />
+    </form>
+    <span style="font-size: 75%;color: gray;">
+    By downloading the product you consent to and fully accept our <a target="_blank" href="https://gantt.nextedy.com/download/LICENSE.pdf">License Terms</a>.
+    </span>
+    </center>
+    
+  </div>
+</div>
+
+<center ><br/>
+<a onClick="openDownload()">
+<button class="mdc-button">&nbsp;Download Trial Now!&nbsp;</button>
 </a>
 </center>
 <br>
 </div>
+
 
 Interactive drag & drop enabled Gantt chart widget provides unique capabilities to expose the standard Work Items (such as Features, Epics, Objectives, ...) as micro projects in a visually appealing way and perform various operations easily and efficiently.
 
@@ -78,4 +153,35 @@ Sometimes the task schedule should be derivered from the children, this is exact
 	FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Nextedy+Help+%26+Support+Center&screenshot=no&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "black", "buttonBg": "#2196f3", "alignment": "4", "offset": "235px", "formHeight": "500px", "screenshot": "no", "captcha": "yes", "url": "https://nextedy.freshdesk.com"} );
 </script>
 
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function openDownload(){
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+}
 
+function downloadDist(){
+    var email = document.getElementById("email").value;
+    if(email==null){
+    		return false;
+    }
+	ga('send','event','download','Gantt-Distribution',"email:"+email);
+	modal.style.display = "none";	
+	window.open('https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip');
+}
+ var url = location.href;
+ if(url.indexOf("downloadNow")!=-1){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+ }
+ 
+</script>
