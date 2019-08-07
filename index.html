@@ -503,7 +503,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <center ><br/>
 <a onClick="openDownload()">
-<button class="mdc-button">Download Trial Now!</button>
+<button class="mdc-button">&nbsp;Download Trial Now!&nbsp;</button>
 </a>
 </center>
 <br>
@@ -556,6 +556,12 @@ function downloadDist(){
     modal.style.display = "none";   
     window.open('https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip');
 }
+ var url = location.href;
+ if(url.indexOf("downloadNow")!=-1){
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+ }
+
 </script>
                 
                   
