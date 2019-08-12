@@ -4,6 +4,7 @@
 
 <div id="download-button" >
 <style>
+
 .mdc-button {	
 	color:white;
     font-family: Roboto,sans-serif;
@@ -92,28 +93,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>Download <b>Work Items Gantt</b></h1>
-    Please fill in your email address to download the installation package.
-    <center>
-    <form onSubmit="downloadDist()">
-    <input type="email"  id="email" class="emailinput" placeholder="Enter your email." />
-    <input type="submit" class="mdc-button" value="Submit" />
-    </form>
-    <span style="font-size: 75%;color: gray;">
-    By downloading the product you consent to and fully accept our <a target="_blank" href="https://gantt.nextedy.com/download/LICENSE.pdf">License Terms</a>.
-    </span>
-    </center>
-    
-  </div>
-</div>
 
 <center ><br/>
-<a onClick="openDownload()">
+<a href="./download">
 <button class="mdc-button">&nbsp;Download Trial Now!&nbsp;</button>
 </a>
 </center>
@@ -129,6 +111,7 @@ Interactive drag & drop enabled Gantt chart widget provides unique capabilities 
 </center>
 ![Gantt Screenshot](img/gantt-overall.png)
 </a>
+
 
 ## Adjust Schedule
 
@@ -148,40 +131,4 @@ Sometimes the task schedule should be derivered from the children, this is exact
 
 ![Projects](img/gantt-projects.gif)
 
-<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
-<script type="text/javascript">
-	FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Nextedy+Help+%26+Support+Center&screenshot=no&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "black", "buttonBg": "#2196f3", "alignment": "4", "offset": "235px", "formHeight": "500px", "screenshot": "no", "captcha": "yes", "url": "https://nextedy.freshdesk.com"} );
-</script>
 
-<script>
-var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-function openDownload(){
-  var modal = document.getElementById("myModal");
-  modal.style.display = "block";
-}
-
-function downloadDist(){
-    var email = document.getElementById("email").value;
-    if(email==null){
-    		return false;
-    }
-	ga('send','event','download','Gantt-Distribution',"email:"+email);
-	modal.style.display = "none";	
-	window.open('https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip');
-}
- var url = location.href;
- if(url.indexOf("downloadNow")!=-1){
-    var modal = document.getElementById("myModal");
-    modal.style.display = "block";
- }
- 
-</script>

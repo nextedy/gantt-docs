@@ -1,5 +1,8 @@
 # Support
 
+Explore our extensive knowledge base online at  [https://nextedy.freshdesk.com](https://nextedy.freshdesk.com) 
+
+Or file a ticket here:
 <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
 <style type="text/css" media="screen, projection">
 	@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 

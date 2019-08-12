@@ -4,7 +4,7 @@
 ## Changelog
 
 !!! info
-    The latest plugin distribution is available [here](../index.html?downloadNow)
+    The latest plugin distribution is available [here](../download)
     
     For those who read this documentation embedded in Polarion: you can check the online version for up-to-date changelog:
     <https://nextedy.github.io/gantt-docs/changelog/>
