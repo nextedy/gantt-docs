@@ -10,21 +10,17 @@
 
 ## Configure Gantt View
 
-The Work Item Gantt is implemented as standard Polarion widget.
+There are two Live-Report widgets available
 
+* **Work Items Gantt** - exposing Polarion Work Items as items on gantt
+* **Plan Gantt** - exposing Polarion Plans as items on gantt
+
+Check following screenshot and *"Work Items Gantt"* in *"Work Items"* category.
 ![Gantt](img/gantt-widget-add.png)
 
 All the configuration options are described on [Widget Parameters](../widget/#widget-parameters) page.
 
-## Display Modes
-
-You have two options on how to display the Gantt widget.
-
-1.    Setup Gantt as Full-Report view
-    
-    OR
-    
-2.    Add Gantt to an existing report
+In this guide we dive deeper into configuration of *Work Items Gantt*
 
 
 ###  Full Report Gantt
@@ -42,17 +38,14 @@ Please make sure there are no additional empty paragraphs or other whitespace co
 ![Gantt Maximize Widget Property](img/gantt-max-property.png)
 
 
-###  Gantt as Widget
-
 Sometimes it is more useful to embed the Gantt widget to an existing report, together with other reporting widgets. In such case make sure that `Maximize` property is turned off.
 
-* `Advanced` >  `Maximize` - set the Maximize property of the widget to 'no'
 
 !!! warning
     Currently, it is possible to have only one Work Item Gantt widget on a page. Please do not add more of them on a single page.
 
 
-## Data Mapping
+### Data Mapping
 
 Once you have the widget on your page, you need to configure where to store scheduling information. The Gantt model is storing the following data:
 
@@ -80,14 +73,14 @@ You can configure the mapping using the Advanced Widget parameters:
     
     If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.
 
-## Hierarchy
+### Hierarchy
 
 The hierarchy of items on the Gantt chart is derived from work item links. This is controlled by `Parent Role` widget parameter:
 
 * `Parent Role` - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.
 
     
-## Dependencies
+### Dependencies
 
 The dependency links are also derived from the work item links. This is controlled by `Dependency Role` widget parameter:
 
@@ -99,7 +92,7 @@ If you do not want to let the user create dependency links, put following proper
 
 	gantt.config.drag_links = false;		
 	
-## Time Range
+### Time Range
 
 By default the Gantt chart shows the time range as small as to fit the items.
 
@@ -109,7 +102,7 @@ If you want to set the start and end date manually, for example to allow the dra
 	gantt.config.end_date = new Date(2020, 08, 20);
 	
 
-## More 
+### More 
 
 There are more configuration options available, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
 

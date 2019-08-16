@@ -1,4 +1,4 @@
-# Widget
+# Work Items Gantt
 
 The *Work Item Gantt* widget is listed under  *Work Items* tag:
 

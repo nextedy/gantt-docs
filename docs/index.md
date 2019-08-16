@@ -1,6 +1,8 @@
-# Work Items Gantt 
+![Gantt Screenshot](img/gantt-banner.png)
 
-*Work Items Gantt* brings the interactive high-level project planning & scheduling to Polarion ALM. 
+# Nextedy Gantt Widgets
+
+*Nextedy Gantt Widgets* brings the interactive high-level project planning & scheduling to **Polarion ALM**. 
 
 <div id="download-button" >
 <style>
@@ -35,7 +37,7 @@
     overflow: hidden;
     vertical-align: middle;
     border-radius: 4px;
-    background-color:  #3e91fe;
+    background-color:  #ff7a59;
     cursor:pointer;  
 }
 </style>
@@ -130,5 +132,3 @@ The Management of project and task dependencies is another common task. Just sta
 Sometimes the task schedule should be derivered from the children, this is exactly what is covered by `project` type. (Task Script needs to be used to configure what work items are of type `project`
 
 ![Projects](img/gantt-projects.gif)
-
-
