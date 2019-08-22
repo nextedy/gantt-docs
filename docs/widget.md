@@ -150,3 +150,7 @@ gantt.templates.rightside_text = function(start, end, task){
     return  "Capability: <b>"+task.fields.isCapability+"</b>";
 };
 ```
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
+<!-- End of HubSpot Embed Code -->

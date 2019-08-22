@@ -60,3 +60,7 @@
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
+<!-- End of HubSpot Embed Code -->

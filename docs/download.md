@@ -1,15 +1,8 @@
 # Download Work Items Gantt
 
-Please fill in your email address to download the installation package.
+Please fill in your email address to download the installation package and initiate the trial.
 
-<style>
- #hs-form-iframe-0{
-    height:170px !important;
-    width:80% !important;
-    }
-</style>
 
-<br>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script>
   hbspt.forms.create({
@@ -18,8 +11,7 @@ Please fill in your email address to download the installation package.
 });
 </script>
 
-## Evaluation
 
-The evaluation license is included in the distribution. You can download the product and evaluate it free of charge.
-
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
+<!-- End of HubSpot Embed Code -->

@@ -2,7 +2,7 @@
 
 ## Installation
 	
-1.  Download the latest distribution from [here](https://nextedy.github.io/gantt-docs/download/work_items_gantt.zip)
+1.  Download the latest distribution from [here](../download)
 2.  Copy `com.nextedy.polarion.gantt` folder into `POLARION_INSTALL_LOCATION/polarion/extension` folder.
 3.  If you already have production license, please copy the `gantt_lic.json` file to `[POLARION_INSTALL]/polarion/license`
 4.  Restart Polarion server
@@ -106,4 +106,6 @@ If you want to set the start and end date manually, for example to allow the dra
 
 There are more configuration options available, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
 
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
+<!-- End of HubSpot Embed Code -->

@@ -132,3 +132,7 @@ The Management of project and task dependencies is another common task. Just sta
 Sometimes the task schedule should be derivered from the children, this is exactly what is covered by `project` type. (Task Script needs to be used to configure what work items are of type `project`
 
 ![Projects](img/gantt-projects.gif)
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
+<!-- End of HubSpot Embed Code -->
