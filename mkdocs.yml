@@ -5,7 +5,9 @@ site_author: 'Nextedy'
 nav:
     - Home: index.md
     - Setup: setup.md
-    - Widget: widget.md
+    - Widgets:
+       - Work Items Gantt Widget: widget-wi.md
+       - Plan Gantt Widget: widget-plan.md
     - Download: download.md
     - Pricing: pricing.md    
     - Support: support.md
