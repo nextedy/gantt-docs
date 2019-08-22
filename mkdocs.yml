@@ -6,7 +6,7 @@ nav:
     - Home: index.md
     - Setup: setup.md
     - Widgets:
-       - Work Items Gantt Widget: widget-wi.md
+       - Work Items Gantt Widget: widget.md
        - Plan Gantt Widget: widget-plan.md
     - Download: download.md
     - Pricing: pricing.md    
@@ -18,11 +18,19 @@ theme:
   name: 'material'
   font: false
   palette:
-    primary: 'blue'
+    primary: 'black'
     accent: 'red'
   favicon: img/favicon.png
-    
+  custom_dir: 'theme'
+  logo: 'https://www.nextedy.com/wp-content/uploads/2018/10/nextedy-logo.png'
 
+extra_css:
+  - 'extra/extra.css'
+
+
+extra_javascript:
+  - 'extra/extra.js'
+  
 markdown_extensions:
   - admonition
   - codehilite

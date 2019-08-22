@@ -2,100 +2,9 @@
 
 # Nextedy Gantt Widgets
 
-*Nextedy Gantt Widgets* brings the interactive high-level project planning & scheduling to **Polarion ALM**. 
+The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 
 
 <div id="download-button" >
-<style>
-
-.mdc-button {	
-	color:white;
-    font-family: Roboto,sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-size: .875rem;
-    line-height: 2.25rem;
-    font-weight: 500;
-    letter-spacing: .0892857143em;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 4px 8px 0 8px;
-    display: inline-flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    min-width: 64px;
-    height: 36px;
-    border: none;
-    outline: none;
-    line-height: inherit;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none;
-    overflow: hidden;
-    vertical-align: middle;
-    border-radius: 4px;
-    background-color:  #ff7a59;
-    cursor:pointer;  
-}
-</style>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 30px;
-  border: 1px solid #888;
-  max-width: 650px;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.emailinput {
-    border: 1px solid #89b1dc;
-    padding: 10px;
-    width: 60%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius:4px;
-    height:36px;
-    }
-</style>
-
-
-
-
 <center ><br/>
 <a href="./download">
 <button class="mdc-button">&nbsp;Try Now!&nbsp;</button>
@@ -105,34 +14,43 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </div>
 
 
-Interactive drag & drop enabled Gantt chart widget provides unique capabilities to expose the standard Work Items (such as Features, Epics, Objectives, ...) as micro projects in a visually appealing way and perform various operations easily and efficiently.
+The drag & drop enabled Gantt chart widgets provides unique capabilities to manage the standard Work Items (such as Features, Epics, Objectives, ...) as micro projects in a visually appealing way and perform various operations easily and efficiently.
 
-<a href="https://youtu.be/9D_djgsCIac">
-<center>
-**Play Overview Video**
-</center>
-![Gantt Screenshot](img/gantt-overall.png)
-</a>
+<br>
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/9D_djgsCIac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Adjust Schedule
+## Schedule with Ease
 
-You can easily adjust the project schedule, including re-scheduling of the subtasks when the parent project schedule is adjusted:
+Easily adjust the project schedule.
 
-![Replan](img/gantt-drag-children.gif)
-
-## Manage Dependencies
-
-The Management of project and task dependencies is another common task. Just start a link on start item and finish it on target item:
-
-![Dependencies](img/gantt-drag-dependency-link.gif)
-
-## Project Types
-
-Sometimes the task schedule should be derivered from the children, this is exactly what is covered by `project` type. (Task Script needs to be used to configure what work items are of type `project`
+Re-schedule the subtasks automatically when the parent project schedule is adjusted - or the other way around.
 
 ![Projects](img/gantt-projects.gif)
 
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
-<!-- End of HubSpot Embed Code -->
+<div class="who-banner" >
+<i>Did you know?</i>
+<h3>Nextedy was founded by two former Polarion VPs</h3>
+To deliver applications that  span across oceans we rely on our experience and expertise in running worldwide software product projects,  as well as on highly motivated teams.
+<br>
+<a href="https://www.nextedy.com/who/" style="float:right"><button class="mdc-button" style="background-color:#2096f3">Who we are?&nbsp;</button></a>
+<br>
+</div>
+
+## Instant Dependencies
+
+Spot the project dependencies instantly.
+
+ Set the dependency as quick as in a single second.
+
+![Dependencies](img/gantt-drag-dependency-link.gif)
+
+## Versioning
+
+Highlight the differences of the current state against the original plan.
+
+![Versioning](img/gantt-versioning.gif)
+
+
+
+

@@ -10,8 +10,3 @@ Please fill in your email address to download the installation package and initi
 	formId: "385aed16-fb7a-469c-a416-b644cca90b05"
 });
 </script>
-
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
-<!-- End of HubSpot Embed Code -->

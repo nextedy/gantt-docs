@@ -105,7 +105,3 @@ If you want to set the start and end date manually, for example to allow the dra
 ### More 
 
 There are more configuration options available, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
-<!-- End of HubSpot Embed Code -->

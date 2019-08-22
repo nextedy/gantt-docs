@@ -42,7 +42,8 @@ The *Plans Gantt* widget is listed under  *Plans* tag. It shows Polarion Plans a
 
 	Example: [How to change text on right?](https://nextedy.freshdesk.com/support/solutions/articles/48000064501-how-to-change-text-on-right-)
 
+* **`Markers Script`** - a server side javascript snippet executed on the server to prepare the collection of markers. Every customer is tracking the milestone differently (as timeponts, plans, workitems ...), so we keep it as much flexible as possible and we provide scripting option.. 
 
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
-<!-- End of HubSpot Embed Code -->
+	Example: [How to add Markers via Marker Script?](https://nextedy.freshdesk.com/solution/articles/48000862790-how-to-add-markers-via-marker-script)
+
+

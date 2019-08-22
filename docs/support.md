@@ -9,7 +9,3 @@ Or file a ticket here:
 </style> 
 <iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://nextedy.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&screenshot=No&captcha=yes" scrolling="no" height="500px" width="100%" frameborder="0" >
 </iframe>
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
-<!-- End of HubSpot Embed Code -->
