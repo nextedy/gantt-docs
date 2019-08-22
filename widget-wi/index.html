@@ -40,7 +40,7 @@
     
     
       
-        <title>Download - Nextedy Gantt Widgets</title>
+        <title>Work Items Gantt Widget - Nextedy Gantt Widgets</title>
       
     
     
@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#download-work-items-gantt" tabindex="1" class="md-skip">
+      <a href="#work-items-gantt-widget" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -133,7 +133,7 @@
               Nextedy Gantt Widgets
             </span>
             <span class="md-header-nav__topic">
-              Download
+              Work Items Gantt Widget
             </span>
           
         </div>
@@ -223,10 +223,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Widgets
@@ -242,11 +244,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../widget-wi/" title="Work Items Gantt Widget" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Work Items Gantt Widget
+      </label>
+    
+    <a href="./" title="Work Items Gantt Widget" class="md-nav__link md-nav__link--active">
       Work Items Gantt Widget
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#widget-parameters" title="Widget Parameters" class="md-nav__link">
+    Widget Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-parameters" title="Advanced Parameters" class="md-nav__link">
+    Advanced Parameters
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -271,20 +318,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Download" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../download/" title="Download" class="md-nav__link">
       Download
     </a>
-    
   </li>
 
     
@@ -353,6 +391,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#widget-parameters" title="Widget Parameters" class="md-nav__link">
+    Widget Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-parameters" title="Advanced Parameters" class="md-nav__link">
+    Advanced Parameters
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -364,17 +425,80 @@
               
                 
                 
-                <h1 id="download-work-items-gantt">Download Work Items Gantt</h1>
-<p>Please fill in your email address to download the installation package and initiate the trial.</p>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-
-<script>
-  hbspt.forms.create({
-    portalId: "6265870",
-    formId: "385aed16-fb7a-469c-a416-b644cca90b05"
-});
-</script>
-
+                <h1 id="work-items-gantt-widget">Work Items Gantt Widget</h1>
+<p>The <em>Work Item Gantt</em> widget is listed under  <em>Work Items</em> tag:</p>
+<p><img alt="Gantt" src="../img/gantt-widget-add.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Currently, it is possible to have only one Work Item Gantt widget on a page.</p>
+</div>
+<h2 id="widget-parameters">Widget Parameters</h2>
+<ul>
+<li>
+<p><strong><code>Work Items</code></strong> - a standard data set parameter. Select what work items you want to see on your Gantt chart.</p>
+</li>
+<li>
+<p><strong><code>Sort by</code></strong> -  the sort criteria to sort the top level work items.</p>
+</li>
+<li>
+<p><strong><code>Load Children</code></strong> - define how many levels of child items should be traversed and added to the list in addition to the items from <code>Work Items</code> date set parameter. </p>
+<p>Zero (0) means that no additional items are shown.</p>
+</li>
+<li>
+<p><strong><code>Show Unplanned</code></strong> - click on <code>no</code> to hide all the work items that do not have the <code>Start Field</code> set. </p>
+<p>If you keep it set to <code>yes</code>, such tasks will be in the list, scheduled for 'Today', and marked by <em>gray</em> color. </p>
+</li>
+<li>
+<p><strong><code>Scale ( D || W || M )</code></strong> -  configures the scale of the Gantt timeline. Values are: </p>
+<ul>
+<li>'D' - day</li>
+<li>'W' - week</li>
+<li>'M' - Month</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Parent Role</code></strong> - select what Work Item link roles should be used to detect the parent-child relationships. If empty, no hierarchy is shown.</p>
+</li>
+<li>
+<p><strong><code>Dependency Role</code></strong> - select what Work Item link roles should be used to detect Depends-on relationships. If empty, no dependencies will be shown. </p>
+<p>If you select multiple link roles, the first role is used when creating new links.</p>
+</li>
+</ul>
+<h2 id="advanced-parameters">Advanced Parameters</h2>
+<ul>
+<li>
+<p><strong><code>Maximize View</code></strong> -  configure if the widget should expand its content over the full working area. See <a href="../setup/">Setup</a>.</p>
+</li>
+<li>
+<p><strong><code>Drag Children</code></strong> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
+</li>
+<li>
+<p><strong><code>Start Field</code></strong> -  sets the name of the custom field that stores the information when the work item starts. </p>
+<p>The type of the custom field can be any of these: Date, Date-Time or String. </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.</p>
+</li>
+<li>
+<p><strong><code>Duration Field</code></strong> -  sets the name of the custom field, that stores the information about the work item duration as the number of days. </p>
+<p>The type of the custom field can be any of these: Integer or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using an Integer custom field.</p>
+</li>
+<li>
+<p><strong><code>Progress Field</code></strong> - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). </p>
+<p>The type of the custom field can be any of these: Float or String.  </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.</p>
+</li>
+<li>
+<p><strong><code>Max Items</code></strong> -  (Integer) limits the maximum number of work items loaded into the Gantt view.</p>
+</li>
+<li>
+<p><strong><code>Gantt Config Script</code></strong> - a optional javascript snippet executed on the client, usually used to add additional Gantt configuration options.</p>
+<p>Example: <a href="https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-">How to set the Gantt time range?</a>.</p>
+</li>
+<li>
+<p><strong><code>Item Script</code></strong> - a server side javascript snippet executed on the server to decorate the task based on the work item properties. </p>
+<p>Example: <a href="https://nextedy.freshdesk.com/support/solutions/articles/48000064501-how-to-change-text-on-right-">How to change text on right?</a></p>
+</li>
+</ul>
 <!-- Start of HubSpot Embed Code -->
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
@@ -400,7 +524,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../widget-plan/" title="Plan Gantt Widget" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../setup/" title="Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -409,19 +533,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Plan Gantt Widget
+                Setup
               </span>
             </div>
           </a>
         
         
-          <a href="../pricing/" title="Pricing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../widget-plan/" title="Plan Gantt Widget" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pricing
+                Plan Gantt Widget
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
