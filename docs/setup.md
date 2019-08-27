@@ -3,9 +3,10 @@
 ## Installation
 	
 1.  Download the latest distribution from [here](../download)
-2.  Copy `com.nextedy.polarion.gantt` folder into `POLARION_INSTALL_LOCATION/polarion/extension` folder.
+2.  Copy `com.nextedy.polarion.gantt` folder into `[POLARION_INSTALL]/polarion/extension` folder.
 3.  If you already have production license, please copy the `gantt_lic.json` file to `[POLARION_INSTALL]/polarion/license`
-4.  Restart Polarion server
+4.  Delete [POLARION_INSTALL]/data/workspace/.config
+5.  Restart Polarion server
 
 
 ## Configure Gantt View
@@ -105,3 +106,13 @@ If you want to set the start and end date manually, for example to allow the dra
 ### More 
 
 There are more configuration options available, see [Widget Parameters](../widget/#widget-parameters) page for the full list. 
+
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "5bd41922-e50b-4faf-9a94-e51709c815d6",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>

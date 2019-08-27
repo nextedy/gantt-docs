@@ -2,7 +2,11 @@
 
 ## Changelog
 
-### 1.6.0 <small>- August 22, 2019 </small>
+### 1.6.1 <small>- August 27, 2019 </small>
+
+* Support for velocity scripting in *Advanced > Gantt Script* parameter, see use case here: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-)
+
+### 1.6.0 <small>- August 23, 2019 </small>
 
 * Support for Markers Script, see [How to add Markers via Marker Script?](https://nextedy.freshdesk.com/solution/articles/48000862790-how-to-add-markers-via-marker-script)
 * Regular bug-fixing
