@@ -2,7 +2,6 @@
 
 ## Changelog
 
-
 ### 1.6.2 <small>- August 28, 2019 </small>
 * Fix for ugly bug that custom field of type Date-Time was not supported for Start/End dates. We still recomend to use Date-only but some customers prefere Date-Time.
 

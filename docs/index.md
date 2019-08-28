@@ -4,6 +4,11 @@
 
 The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 
 
+
+* *Gain better user satisfaction by fine-tuned planning views*
+* *Hold your plans faithful as they become trivial to maintain*
+* *Bring more transparency into cross-project dependencies*
+
 <div id="download-button" >
 <center ><br/>
 <a href="./download">
@@ -15,6 +20,7 @@ The first **interactive** high-level project planning & scheduling in **Polarion
 
 
 The drag & drop enabled Gantt chart widgets provides unique capabilities to manage the standard Work Items (such as Features, Epics, Objectives, ...) as micro projects in a visually appealing way and perform various operations easily and efficiently.
+
 
 <br>
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/9D_djgsCIac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
