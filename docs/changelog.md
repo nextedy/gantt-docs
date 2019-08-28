@@ -2,6 +2,10 @@
 
 ## Changelog
 
+
+### 1.6.2 <small>- August 28, 2019 </small>
+* Fix for ugly bug that custom field of type Date-Time was not supported for Start/End dates. We still recomend to use Date-only but some customers prefere Date-Time.
+
 ### 1.6.1 <small>- August 27, 2019 </small>
 
 * Support for velocity scripting in *Advanced > Gantt Script* parameter, see use case here: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-)
@@ -54,14 +58,20 @@
 ### 1.0.0 <small>- May 5, 2019</small>
 *  After couple of months of development and use in several customer projects we officially release the public version 1.0.0.
 
-## TODO
+## Roadmap / TODO
 	
 * **Markers** - support for release/milestone markers (timepoints, plans, ...)
+	* It is covered now since 1.6 with `Advanced > Markers Script`, but we are still considering a native support
 * **Readonly** - add widget property to mark Gantt read-only
+* **Start/End Dates** - add direct support for Start/End dates. 
+	* Currently possible with scripting: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-), we are considering adding a dedicated parameters
+* **Overdue** - mark overdue tasks with different colors
+* **Compute Start from End** - currently we compute end date from start date and duration, make it possible to compute start date from end date.
+* **Drag Project** - support for moving tass of type 'project'
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
-	* Partially possibly in 1.0.2 with `Task Script`
+	* It is possible using a script since 1.0.2 with `Task Script`
 * **Item Colors based on Type** - make it possible to color the tasks based on item type.
-	* Partially possibly in 1.0.2 with `Task Script`
+	* It is possible using a script since 1.0.2 with `Task Script`
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
