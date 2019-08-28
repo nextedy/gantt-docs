@@ -78,7 +78,7 @@ Detailed conditions available [here](https://gantt.nextedy.com/download/LICENSE.
 
 The evaluation license is included in the distribution. You can download the product and **evaluate** it free of charge for **30 days**.
 
-<a name="getquote">&nbsp</a>
+<a name="getquote">&nbsp;</a>
 
 ## 6. How do I purchase a license?
 
