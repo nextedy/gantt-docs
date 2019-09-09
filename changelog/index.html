@@ -347,6 +347,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#17-sep-9-2019" title="1.7 - Sep 9, 2019 " class="md-nav__link">
+    1.7 - Sep 9, 2019 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#162-august-28-2019" title="1.6.2 - August 28, 2019 " class="md-nav__link">
     1.6.2 - August 28, 2019 
   </a>
@@ -473,6 +480,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#17-sep-9-2019" title="1.7 - Sep 9, 2019 " class="md-nav__link">
+    1.7 - Sep 9, 2019 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#162-august-28-2019" title="1.6.2 - August 28, 2019 " class="md-nav__link">
     1.6.2 - August 28, 2019 
   </a>
@@ -566,6 +580,14 @@
                 
                 <h1 id="release-notes">Release Notes</h1>
 <h2 id="changelog">Changelog</h2>
+<h3 id="17-sep-9-2019">1.7 <small>- Sep 9, 2019 </small></h3>
+<ul>
+<li>New property <strong>Advanced &gt; Show Today Marker</strong> - if true, a today marker is added to the gantt.</li>
+<li>New property <strong>Advanced &gt; Start Field is End Date (calculate from end)</strong> - this one is tricky, if it is true, than the <strong>Start Field</strong> will be actually treated as end date. What? Simply read more at <a href="">How to configure the gantt to compute the start date from end/due date?</a></li>
+<li><code>widgetContext</code> object (<a href="https://almdemo.polarion.com/polarion/sdk/doc/javadoc-rendering/com/polarion/alm/shared/api/model/rp/widget/RichPageWidgetRenderingContext.html">Class Javadoc</a>) has been added to <strong>Markers Script</strong>. It can be used to e.g. access the project context via <code>widgetContext.getDisplayedScope().projectId()</code></li>
+<li><strong>Progress coloring added</strong> - the gantt will now mark the tasks that end in the past and are unresolved as red, and those with planned progress date in a past as orange. If you do not like this behaviour, you can turn it off by adding <code>gantt.config.show_progress_colors=false;</code> into <code>Advanced &gt; Gantt Config Script</code>. We do not want to add a widget property to control this behaviour to restrict number of properties.</li>
+</ul>
+<p><img alt="gantt-progress-colors" src="../img/gantt-progress-colors.png" /></p>
 <h3 id="162-august-28-2019">1.6.2 <small>- August 28, 2019 </small></h3>
 <ul>
 <li>Fix for ugly bug that custom field of type Date-Time was not supported for Start/End dates. We still recomend to use Date-only but some customers prefere Date-Time.</li>
@@ -641,6 +663,8 @@
 <li>It is possible using a script since 1.0.2 with <code>Task Script</code></li>
 </ul>
 </li>
+<li><strong>Working Time</strong> - derived from the Polarion calendar.</li>
+<li><strong>Widget Context</strong> - in the Marker Script</li>
 </ul>
 <h2 id="known-issues">Known Issues</h2>
 <ul>
