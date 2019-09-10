@@ -5,7 +5,7 @@
 1.  Download the latest distribution from [here](../download)
 2.  Copy `com.nextedy.polarion.gantt` folder into `[POLARION_INSTALL]/polarion/extension` folder.
 3.  If you already have production license, please copy the `gantt_lic.json` file to `[POLARION_INSTALL]/polarion/license`
-4.  Delete [POLARION_INSTALL]/data/workspace/.config
+4.  Delete `[POLARION_INSTALL]/data/workspace/.config`
 5.  Restart Polarion server
 
 
