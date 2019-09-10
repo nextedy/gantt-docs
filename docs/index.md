@@ -5,9 +5,9 @@
 The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 
 
 
-* *Gain better user satisfaction by fine-tuned planning views*
+* *Gain better user satisfaction with fine-tuned planning views*
 * *Hold your plans faithful as they become trivial to maintain*
-* *Bring more transparency into cross-project dependencies*
+* *Bring more transparency into cross-project dependencies and progress*
 
 <div id="download-button" >
 <center ><br/>

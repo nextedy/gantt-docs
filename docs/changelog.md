@@ -2,6 +2,15 @@
 
 ## Changelog
 
+### 1.7 <small>- Sep 9, 2019 </small>
+* New property **Advanced > Show Today Marker** - if true, a today marker is added to the gantt.
+* New property **Advanced > Start Field is End Date (calculate from end)** - this one is tricky, if it is true, than the **Start Field** will be actually treated as end date. What? Simply read more at [How to configure the gantt to compute the start date from end/due date?]()
+* `widgetContext` object ([Class Javadoc](https://almdemo.polarion.com/polarion/sdk/doc/javadoc-rendering/com/polarion/alm/shared/api/model/rp/widget/RichPageWidgetRenderingContext.html)) has been added to **Markers Script**. It can be used to e.g. access the project context via `widgetContext.getDisplayedScope().projectId()`
+* **Progress coloring added** - the gantt will now mark the tasks that end in the past and are unresolved as red, and those with planned progress date in a past as orange. If you do not like this behaviour, you can turn it off by adding `gantt.config.show_progress_colors=false;` into `Advanced > Gantt Config Script`. We do not want to add a widget property to control this behaviour to restrict number of properties.
+
+![gantt-progress-colors](img/gantt-progress-colors.png)
+
+
 ### 1.6.2 <small>- August 28, 2019 </small>
 * Fix for ugly bug that custom field of type Date-Time was not supported for Start/End dates. We still recomend to use Date-only but some customers prefere Date-Time.
 
@@ -64,13 +73,12 @@
 * **Readonly** - add widget property to mark Gantt read-only
 * **Start/End Dates** - add direct support for Start/End dates. 
 	* Currently possible with scripting: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-), we are considering adding a dedicated parameters
-* **Overdue** - mark overdue tasks with different colors
-* **Compute Start from End** - currently we compute end date from start date and duration, make it possible to compute start date from end date.
 * **Drag Project** - support for moving tass of type 'project'
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
 	* It is possible using a script since 1.0.2 with `Task Script`
 * **Item Colors based on Type** - make it possible to color the tasks based on item type.
 	* It is possible using a script since 1.0.2 with `Task Script`
+* **Working Time** - derived from the Polarion calendar.
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
