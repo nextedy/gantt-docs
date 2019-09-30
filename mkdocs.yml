@@ -36,6 +36,7 @@ markdown_extensions:
   - codehilite
   - meta
   - tables
+  - attr_list
   
   
 google_analytics:

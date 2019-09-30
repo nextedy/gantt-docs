@@ -14,20 +14,22 @@ It includes **12 months of software support** & maintenance.
 
 **Number of users**  	| **Price**
 ------------------- 	| -------------
-1-25 users			| $ 250		
-26-50 users			| $ 450		
-51-100 users			| $ 830		
-101-250 users		| $ 1,650	
-251-500 users		| $ 2,480	
-501-2000 users		| $ 3,040	
-2000+ users			| $ 3,800	
+1-10 users			|  245 EUR		
+11-25 users			|  460 EUR
+26-50 users			|  690 EUR	
+51-100 users			| 1040 EUR		
+101-250 users		| 1950 EUR
+251-500 users		| 2930 EUR
+501-1000 users		| 3700 EUR	
+1001-2500 users		| 4500 EUR	
+2501+ users			| 5000 EUR
+
 
 <br/>
 <a href="#getquote">
-<button class="mdc-button">&nbsp;Get a Quote!&nbsp;</button>
+<button class="mdc-button">&nbsp;Get official Quote!&nbsp;</button>
 </a>
 </center>
-
 
 <div class="who-banner" >
 <b><i>Why to pay and not develop in house?</i></b>
@@ -82,7 +84,7 @@ The evaluation license is included in the distribution. You can download the pro
 
 ## 6. How do I purchase a license?
 
-Start by requesting a no-obligation quote:
+Start by requesting a no-obligation quote valid for next 30 days:
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script>

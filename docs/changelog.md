@@ -2,6 +2,12 @@
 
 ## Changelog
 
+### 1.7.1 <small>- Sep 17, 2019 </small>
+* Support for working days, when **Advanced > Working Calendar == YES** the item duration takes into account working days. The working calendar is defined by Global Polarion Administration > Work Items > Working Calendar
+
+![gantt-working-calendar](img/gantt-working-calendar.gif){: style="width:450px"}
+
+
 ### 1.7 <small>- Sep 9, 2019 </small>
 * New property **Advanced > Show Today Marker** - if true, a today marker is added to the gantt.
 * New property **Advanced > Start Field is End Date (calculate from end)** - this one is tricky, if it is true, than the **Start Field** will be actually treated as end date. What? Simply read more at [How to configure the gantt to compute the start date from end/due date?]()
@@ -68,15 +74,12 @@
 
 ## Roadmap / TODO
 	
-* **Markers** - support for release/milestone markers (timepoints, plans, ...)
-	* It is covered now since 1.6 with `Advanced > Markers Script`, but we are still considering a native support
+
 * **Readonly** - add widget property to mark Gantt read-only
 * **Start/End Dates** - add direct support for Start/End dates. 
 	* Currently possible with scripting: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-), we are considering adding a dedicated parameters
 * **Drag Project** - support for moving tass of type 'project'
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
-	* It is possible using a script since 1.0.2 with `Task Script`
-* **Item Colors based on Type** - make it possible to color the tasks based on item type.
 	* It is possible using a script since 1.0.2 with `Task Script`
 * **Working Time** - derived from the Polarion calendar.
 
