@@ -283,6 +283,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-mapping" title="Data Mapping" class="md-nav__link">
+    Data Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#advanced-parameters" title="Advanced Parameters" class="md-nav__link">
     Advanced Parameters
   </a>
@@ -405,6 +412,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#data-mapping" title="Data Mapping" class="md-nav__link">
+    Data Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#advanced-parameters" title="Advanced Parameters" class="md-nav__link">
     Advanced Parameters
   </a>
@@ -467,16 +481,16 @@
 <p>If you select multiple link roles, the first role is used when creating new links.</p>
 </li>
 </ul>
-<h2 id="advanced-parameters">Advanced Parameters</h2>
+<h2 id="data-mapping">Data Mapping</h2>
+<p><strong>You should select a combination of :  <em>Start Field &amp; Duration Field</em> , <em>End Field &amp; Duration Field</em>, or <em>Start Field &amp; End Field"</em> </strong></p>
 <ul>
 <li>
-<p><strong><code>Maximize View</code></strong> -  configure if the widget should expand its content over the full working area. See <a href="../setup/">Setup</a>.</p>
-</li>
-<li>
-<p><strong><code>Drag Children</code></strong> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
-</li>
-<li>
 <p><strong><code>Start Field</code></strong> -  sets the name of the custom field that stores the information when the work item starts. </p>
+<p>The type of the custom field can be any of these: Date, Date-Time or String. </p>
+<p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.</p>
+</li>
+<li>
+<p><strong><code>End Field</code></strong> -  sets the name of the custom field that stores the information when the work item ends. </p>
 <p>The type of the custom field can be any of these: Date, Date-Time or String. </p>
 <p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.</p>
 </li>
@@ -489,6 +503,15 @@
 <p><strong><code>Progress Field</code></strong> - the name of the custom field, that stores the progress of the work item progress as Float (multiply by 100 to get % of completion). </p>
 <p>The type of the custom field can be any of these: Float or String.  </p>
 <p>If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.</p>
+</li>
+</ul>
+<h2 id="advanced-parameters">Advanced Parameters</h2>
+<ul>
+<li>
+<p><strong><code>Maximize View</code></strong> -  configure if the widget should expand its content over the full working area. See <a href="../setup/">Setup</a>.</p>
+</li>
+<li>
+<p><strong><code>Drag Children</code></strong> -  configure if you want the child items to be rescheduled when dragging their parent's item.</p>
 </li>
 <li>
 <p><strong><code>Max Items</code></strong> -  (Integer) limits the maximum number of work items loaded into the Gantt view.</p>
