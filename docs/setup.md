@@ -51,12 +51,21 @@ Sometimes it is more useful to embed the Gantt widget to an existing report, tog
 Once you have the widget on your page, you need to configure where to store scheduling information. The Gantt model is storing the following data:
 
 * Start Date (Date)
+* End Date (Date)
 * Duration (Number of days)
 * Progress (Float from 0 .. 1)
 
-You can configure the mapping using the Advanced Widget parameters:
+**You should select a combination of :  *Start Field & Duration Field* , *End Field & Duration Field*, or *Start Field & End Field"* **
+
+You can configure the mapping using the *Data Mapping* Widget parameters:
 
 * `Start Field` -  the name of the custom field, that stores the information when the work item starts. 
+
+    The type of the custom field can be any of these: Date, Date-Time or String. 
+    
+    If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.
+    
+* `End Field` -  the name of the custom field, that stores the information when the work item ends. 
 
     The type of the custom field can be any of these: Date, Date-Time or String. 
     

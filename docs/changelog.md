@@ -2,6 +2,19 @@
 
 ## Changelog
 
+
+### 1.8 <small>- Oct 8, 2019 </small>
+* Add support for scheduling by setting start & end date (for those who prefer explicit planning and not via Duration field). Now you can configure the widget to use any combination of data Mapping: **Start Field & Duration Field** , **End Field & Duration Field**, or **Start Field & End Field**.  The property "Start Field is End Date" is now marked as deprecated, this means it still works well, we just recommend to switch to new format and just set the End Field mapping in Data Mapping section.
+* We have moved all the data mapping settings into special category "Data Mapping".
+ 
+![gantt-data-mapping](img/gantt-data-mapping.png){: style="width:450px"}
+ 
+
+### 1.7.2 <small>- Sep 30, 2019 </small>
+* Fix issue when removing dependency links.
+* We support "start_to_finish" link types only so far, so create them by default.
+* Inform user that just single gantt per page is supported.
+
 ### 1.7.1 <small>- Sep 17, 2019 </small>
 * Support for working days, when **Advanced > Working Calendar == YES** the item duration takes into account working days. The working calendar is defined by Global Polarion Administration > Work Items > Working Calendar
 

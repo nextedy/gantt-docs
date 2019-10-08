@@ -32,14 +32,17 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 
     If you select multiple link roles, the first role is used when creating new links.
 
+## Data Mapping
 
-## Advanced Parameters
-
-* **`Maximize View`** -  configure if the widget should expand its content over the full working area. See [Setup](../setup/).
-
-* **`Drag Children`** -  configure if you want the child items to be rescheduled when dragging their parent's item.
+**You should select a combination of :  *Start Field & Duration Field* , *End Field & Duration Field*, or *Start Field & End Field"* **
 
 * **`Start Field`** -  sets the name of the custom field that stores the information when the work item starts. 
+
+	The type of the custom field can be any of these: Date, Date-Time or String. 
+	
+	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Date (Only) custom field.
+
+* **`End Field`** -  sets the name of the custom field that stores the information when the work item ends. 
 
 	The type of the custom field can be any of these: Date, Date-Time or String. 
 	
@@ -56,6 +59,14 @@ The *Work Item Gantt* widget is listed under  *Work Items* tag:
 	The type of the custom field can be any of these: Float or String.  
 	
 	If such custom field does not exist, the value will be stored in String ad-hoc custom field. For production use, we recommend using a Float custom field.
+
+## Advanced Parameters
+
+* **`Maximize View`** -  configure if the widget should expand its content over the full working area. See [Setup](../setup/).
+
+* **`Drag Children`** -  configure if you want the child items to be rescheduled when dragging their parent's item.
+
+
 
 * **`Max Items`** -  (Integer) limits the maximum number of work items loaded into the Gantt view.
 
