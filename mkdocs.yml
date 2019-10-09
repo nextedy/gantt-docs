@@ -39,9 +39,5 @@ markdown_extensions:
   - attr_list
   
   
-google_analytics:
-  - 'UA-125777914-2'
-  - 'auto'
-  
 copyright: 'Copyright &copy; 2019 Nextedy Systems'
   

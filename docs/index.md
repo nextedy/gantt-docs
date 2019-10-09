@@ -2,8 +2,8 @@
 
 # Nextedy Gantt Widgets
 
-The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 
 
+The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 
 
 * *Gain better user satisfaction with fine-tuned planning views*
 * *Hold your plans faithful as they become trivial to maintain*
