@@ -4,7 +4,7 @@
 
 ### 1.8.1 <small>- Oct 14, 2019 </small>
 * Fix issue with "Plans Gantt" (not loading mapping with 1.8.0 - sorry for the issue, we have extended the automated tests for PlansGantt as well so such issue will never occure again )
-* Add trackerService to Items Script 
+* Add trackerService to Items Script, this enables you to perform various calculations and store then in task.getFields().put(key,value) and render them on the gantt.
 
 
 ### 1.8 <small>- Oct 8, 2019 </small>
