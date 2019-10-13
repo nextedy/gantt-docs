@@ -1,6 +1,10 @@
-# Release Notes
-
+# Release Notes 
 ## Changelog
+
+
+### 1.8.1 <small>- Oct 14, 2019 </small>
+* Fix issue with "Plans Gantt" (not loading mapping with 1.8.0 - sorry for the issue, we have extended the automated tests for PlansGantt as well so such issue will never occure again )
+* Add trackerService to Items Script 
 
 
 ### 1.8 <small>- Oct 8, 2019 </small>
@@ -94,7 +98,12 @@
 * **Drag Project** - support for moving tass of type 'project'
 * **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
 	* It is possible using a script since 1.0.2 with `Task Script`
-* **Working Time** - derived from the Polarion calendar.
 
 ## Known Issues
 * When you collapse a left side Polarion navigator, the empty place appears on the right (collapse/drag fixes it)
+
+
+<hr>
+<iframe src="https://gantt.nextedy.com/download/bnum.txt" height=35 style="padding-top:10px;border:0px solid white;"> </iframe>
+
+
