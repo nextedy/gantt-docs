@@ -68,31 +68,6 @@
     
     
       
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-125777914-2", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
     
 	<!-- Start of HubSpot Embed Code via block -->
 	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6265870.js"></script>
@@ -359,6 +334,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#181-oct-14-2019" title="1.8.1 - Oct 14, 2019 " class="md-nav__link">
+    1.8.1 - Oct 14, 2019 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#18-oct-8-2019" title="1.8 - Oct 8, 2019 " class="md-nav__link">
     1.8 - Oct 8, 2019 
   </a>
@@ -513,6 +495,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#181-oct-14-2019" title="1.8.1 - Oct 14, 2019 " class="md-nav__link">
+    1.8.1 - Oct 14, 2019 
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#18-oct-8-2019" title="1.8 - Oct 8, 2019 " class="md-nav__link">
     1.8 - Oct 8, 2019 
   </a>
@@ -634,6 +623,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <h1 id="release-notes">Release Notes</h1>
 <h2 id="changelog">Changelog</h2>
+<h3 id="181-oct-14-2019">1.8.1 <small>- Oct 14, 2019 </small></h3>
+<ul>
+<li>Fix issue with "Plans Gantt" (not loading mapping with 1.8.0 - sorry for the issue, we have extended the automated tests for PlansGantt as well)</li>
+<li>Add trackerService to Items Script </li>
+</ul>
 <h3 id="18-oct-8-2019">1.8 <small>- Oct 8, 2019 </small></h3>
 <ul>
 <li>Add support for scheduling by setting start &amp; end date (for those who prefer explicit planning and not via Duration field). Now you can configure the widget to use any combination of data Mapping: <strong>Start Field &amp; Duration Field</strong> , <strong>End Field &amp; Duration Field</strong>, or <strong>Start Field &amp; End Field</strong>.  The property "Start Field is End Date" is now marked as deprecated, this means it still works well, we just recommend to switch to new format and just set the End Field mapping in Data Mapping section.</li>
