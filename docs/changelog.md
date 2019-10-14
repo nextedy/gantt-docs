@@ -2,6 +2,9 @@
 ## Changelog
 
 
+### 1.8.2 <small>- Oct 14, 2019 </small>
+* Support UTF-8 properly (Chinese, Japanese, etc...)
+
 ### 1.8.1 <small>- Oct 14, 2019 </small>
 * Fix issue with "Plans Gantt" (not loading mapping with 1.8.0 - sorry for the issue, we have extended the automated tests for PlansGantt as well so such issue will never occure again )
 * Add trackerService to Items Script, this enables you to perform various calculations and store then in task.getFields().put(key,value) and render them on the gantt.
