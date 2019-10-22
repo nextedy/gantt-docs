@@ -1,6 +1,8 @@
 # Release Notes 
 ## Changelog
 
+### 1.8.3 <small>- Oct 14, 2019 </small>
+* BUG FIX: No plans shown when PlansGantt is configured with "Show Unplanned" = NO
 
 ### 1.8.2 <small>- Oct 14, 2019 </small>
 * Support UTF-8 properly (Chinese, Japanese, etc...)
