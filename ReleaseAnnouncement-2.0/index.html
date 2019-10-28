@@ -40,7 +40,7 @@
     
     
       
-        <title>Context Properties - Nextedy Gantt Widgets</title>
+        <title>ReleaseAnnouncement 2.0 - Nextedy Gantt Widgets</title>
       
     
     
@@ -99,7 +99,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#context-properties" tabindex="1" class="md-skip">
+      <a href="#nextedy-gantt-widget-20" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </span>
             <span class="md-header-nav__topic">
               
-                Context Properties
+                ReleaseAnnouncement 2.0
               
             </span>
           
@@ -338,22 +338,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general-properties" title="General Properties" class="md-nav__link">
-    General Properties
+  <a href="#auto-scheduling" title="Auto Scheduling" class="md-nav__link">
+    Auto Scheduling
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#work-items-gantt-widget-properties-defaults" title="Work Items Gantt Widget Properties Defaults" class="md-nav__link">
-    Work Items Gantt Widget Properties Defaults
+  <a href="#critical-path" title="Critical Path" class="md-nav__link">
+    Critical Path
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plans-gantt-widget-properties-defaults" title="Plans Gantt Widget Properties Defaults" class="md-nav__link">
-    Plans Gantt Widget Properties Defaults
+  <a href="#undoredo" title="Undo/Redo" class="md-nav__link">
+    Undo/Redo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zoom-in-zoom-out-full-screen" title="Zoom In, Zoom Out &amp; Full-screen" class="md-nav__link">
+    Zoom In, Zoom Out &amp; Full-screen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-properties" title="Configuration Properties" class="md-nav__link">
+    Configuration Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-now" title="Available - Now!" class="md-nav__link">
+    Available - Now!
   </a>
   
 </li>
@@ -375,67 +396,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
                 
                 
-                <h1 id="context-properties">Context Properties</h1>
-<p>You can define following propererties in <strong>Administration &gt; Configuration Properties</strong></p>
-<p><img alt="Gantt Screenshot" src="../img/config-properties.png" /></p>
-<h2 id="general-properties">General Properties</h2>
-<ul>
-<li><code>nextedy.gantt.workitems.unplanned_color</code> - Color of the unplanned item. The default is: #7D3C98</li>
-<li><code>nextedy.gantt.today.color</code> - Color of <em>today</em> marker. The default is: gray</li>
-<li><code>nextedy.gantt.classic_project"</code> - Use the classic look of the project item type. The default is: false</li>
-<li><code>nextedy.gantt.zoom.DD.min_column_width</code> - The width of the timeline column in "DD" scale mode. The default is: 120</li>
-<li><code>nextedy.gantt.zoom.D.min_column_width</code> - The width of the timeline column in "D" scale mode. The default is: 60</li>
-<li><code>nextedy.gantt.zoom.W.min_column_width</code> - The width of the timeline column in "W" scale mode. The default is: 30</li>
-<li><code>nextedy.gantt.zoom.M.min_column_width</code> - The width of the timeline column in "M" scale mode. The default is: 70</li>
-<li><code>nextedy.gantt.zoom.Q.min_column_width</code> - The width of the timeline column in "Q" scale mode. The default is: 90</li>
-<li><code>nextedy.gantt.zoom.Y.min_column_width</code> - The width of the timeline column in "Y" scale mode. The default is: 40</li>
-<li><code>nextedy.gantt.zoom.YY.min_column_width</code> - The width of the timeline column in "YY" scale mode. The default is: 190</li>
-<li><code>nextedy.gantt.debug</code> - Enable client side debug messages. The default is: false</li>
-<li><code>nextedy.gantt.default.auto_scheduling</code> - Toggle auto-scheduling by default. The default is: false</li>
-<li><code>nextedy.gantt.default.critical_path</code> - Toggle visualization of critical path by default. The default is: false</li>
-</ul>
-<h2 id="work-items-gantt-widget-properties-defaults">Work Items Gantt Widget Properties Defaults</h2>
-<p>Following settings are used as a default values when you add a Widget to a page. <strong>Once the widget is added to the page, the widget property values are used.</strong></p>
-<ul>
-<li><code>nextedy.gantt.workitems.default.sort_by</code> -  Default value for "Sort By" property. Default is: id</li>
-<li><code>nextedy.gantt.workitems.default.expand_level</code> - Default value for "Load children" property, it specifies how many levels should be added to the dataset. Default is: 0</li>
-<li><code>nextedy.gantt.workitems.default.show_unplanned</code> -  Default value for "Show Unplanned" property. Default is: true</li>
-<li><code>nextedy.gantt.workitems.default.scale</code> -  Default value for "Scale" property. Default is: W</li>
-<li><code>nextedy.gantt.workitems.default.parent_link_roles</code> -  Default value for "Parent Link Roles" property. It is a list of link role IDs separated by ";".  Default is: <em>empty</em></li>
-<li><code>nextedy.gantt.workitems.default.dependency_link_roles</code> -  Default value for "Dependency Link Roles" property. It is a list of link role IDs separated by ";".  Default is: <em>empty</em></li>
-<li><code>nextedy.gantt.workitems.default.start_field"</code> -  Default value for "Start Field" property. Default is: gantt_start</li>
-<li><code>nextedy.gantt.workitems.default.end_field</code> -  Default value for "End Field" property. Default is: <em>none</em></li>
-<li><code>nextedy.gantt.workitems.default.duration_field</code> -  Default value for "Duration Field" property. Default is: gantt_duration</li>
-<li><code>nextedy.gantt.workitems.default.progress_field</code> -  Default value for "Progress Field" property. Default is: gantt_progress             </li>
-<li><code>nextedy.gantt.workitems.default.maximize_view</code> -  Default value for "Maximize" property. Default is: false</li>
-<li><code>nextedy.gantt.workitems.default.hide_toolbar</code> -  Default value for "Hide Toolbar" property. Default is: false</li>
-<li><code>nextedy.gantt.workitems.default.progress_coloring</code> -  Default value for "Progress Coloring" property. Default is: true</li>
-<li><code>nextedy.gantt.workitems.default.drag_children</code> -  Default value for "Drag Children" property. Default is: true</li>
-<li><code>nextedy.gantt.workitems.default.max_items</code> -  Default value for "Max Items" property. Default is: 100</li>
-<li><code>nextedy.gantt.workitems.default.show_today_marker</code> -  Default value for "Show Today Marker" property. Default is: true</li>
-<li><code>nextedy.gantt.workitems.default.working_time</code> -  Default value for "Show Today Marker" property. Default is: true</li>
-</ul>
-<p>Additional defaults, not yet possible to be configured on specific instance of Gantt Widget</p>
-<ul>
-<li><code>nextedy.gantt.workitems.default.forward_dependency</code> - By default in Polarion there is a link role DEPENDS_ON, linking task A with task B, so A depends on B (A can be started after B), if you link the tasks other way around (from B to A), set this to true.  The default value is: false</li>
-<li><code>nextedy.gantt.workitems.default_duration</code> - the default duration of an item, if not specified in task itself, in days. The default is: 10</li>
-<li><code>nextedy.gantt.workitems.default.link_lag</code> - the default lead/lag time for dependency links. Default it: 0</li>
-</ul>
-<h2 id="plans-gantt-widget-properties-defaults">Plans Gantt Widget Properties Defaults</h2>
-<p>These value are used as a default values when you add a Widget to a page. Once it is added, the widget values are used.</p>
-<ul>
-<li><code>nextedy.gantt.plans.default.sort_by</code> -  Default value for "Sort By" property. Default is: id</li>
-<li><code>nextedy.gantt.plans.default.expand_level</code> - Default value for "Load children" property, it specifies how many levels should be added to the dataset. Default is: 0</li>
-<li><code>nextedy.gantt.plans.default.show_unplanned</code> -  Default value for "Show Unplanned" property. Default is: true</li>
-<li><code>nextedy.gantt.default.plans.scale</code> -  Default value for "Scale" property. Default is: W</li>
-<li><code>nextedy.gantt.plans.default.maximize_view</code> -  Default value for "Maximize" property. Default is: false</li>
-<li><code>nextedy.gantt.plans.default.hide_toolbar</code> -  Default value for "Hide Toolbar" property. Default is: false</li>
-<li><code>nextedy.gantt.plans.default.progress_coloring</code> -  Default value for "Progress Coloring" property. Default is: true</li>
-<li><code>nextedy.gantt.plans.default.drag_children</code> -  Default value for "Drag Children" property. Default is: true</li>
-<li><code>nextedy.gantt.plans.default.max_items</code> -  Default value for "Max Items" property. Default is: 100</li>
-<li><code>nextedy.gantt.plans.default.show_today_marker</code> -  Default value for "Show Today Marker" property. Default is: true</li>
-<li><code>nextedy.gantt.plans.default.working_time</code> -  Default value for "Show Today Marker" property. Default is: true</li>
-</ul>
+                <p><img alt="Gantt Screenshot" src="../img/GANTT-2.png" /></p>
+<h1 id="nextedy-gantt-widget-20">Nextedy Gantt Widget 2.0</h1>
+<p>So this release is BIG. So big that we have added a toolbar ;) </p>
+<p><img alt="gantt-toolbar" src="../img/gantt-toolbar.gif" /></p>
+<h2 id="auto-scheduling">Auto Scheduling</h2>
+<p>Let's start with auto-scheduling - we start simple, just but making sure the dependant items gets planned after the dependencies, or simply that they get rescheduled if source item is resheduled as well. </p>
+<p>The auto scheduling is currently triggered only when you change an item or modify a link. </p>
+<p>As a related feature - we have added a highlight if the item starts before the dependency is being finished.</p>
+<p><img alt="gantt-auto-schedule" src="../img/gantt-auto-schedule.gif" /></p>
+<p>You can configure if auto-scheduling should be turned on by default using a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.default.auto_scheduling</code>)</p>
+<h2 id="critical-path">Critical Path</h2>
+<p>To let you manage the risks we added a critical path visualization of your gantt project. You can turn it on / off to make sure you can focus on it when needed. </p>
+<p>You can configure if critical-path should be turned on by default using a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.default.critical_path</code>)</p>
+<p><img alt="gantt-critical-path" src="../img/gantt-critical-path.gif" /></p>
+<h2 id="undoredo">Undo/Redo</h2>
+<p>The title says it all! </p>
+<h2 id="zoom-in-zoom-out-full-screen">Zoom In, Zoom Out &amp; Full-screen</h2>
+<p>It was always able to set the scale of the Gantt view, not you can interactively zoom in and out, or even enter the full-screen mode. </p>
+<p>The default set of scale options has been extended: <strong>DD</strong> - the zoomed in day scale, <strong>D</strong> - the day scale, <strong>W</strong> - the week scale, <strong>M</strong> - the month scale, <strong>Q</strong> - the quarter scale, <strong>Y</strong> - the year scale and <strong>YY</strong> - the zoom out year scale</p>
+<p>You can configure at least the width of time-line columns using  a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.zoom...</code>)</p>
+<p><img alt="gantt-zoom" src="../img/gantt-zoom.gif" /></p>
+<h2 id="configuration-properties">Configuration Properties</h2>
+<p>As you can see above, we have added tons of configuration options that you can define on Polarion project or Global level. Checkout
+<a href="../context-properties">this link</a> to get the full list of the config options.</p>
+<h2 id="available-now">Available - Now!</h2>
+<p>You can download the new version from <a href="../download">downloads page</a>. </p>
+<p>Same price - free update for existing customers. </p>
+<p><em>Karel / On behalf of Nextedy Systems Dev Team</em></p>
+<p><br>
+<br>
+<br></p>
                 
                   
                 
