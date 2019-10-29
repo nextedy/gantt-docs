@@ -338,8 +338,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#auto-scheduling" title="Auto Scheduling" class="md-nav__link">
-    Auto Scheduling
+  <a href="#auto-scheduling" title="Auto-scheduling" class="md-nav__link">
+    Auto-scheduling
   </a>
   
 </li>
@@ -359,8 +359,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
       
         <li class="md-nav__item">
-  <a href="#zoom-in-zoom-out-full-screen" title="Zoom In, Zoom Out &amp; Full-screen" class="md-nav__link">
-    Zoom In, Zoom Out &amp; Full-screen
+  <a href="#zoom-in-zoom-out" title="Zoom In, Zoom Out" class="md-nav__link">
+    Zoom In, Zoom Out
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fullscreen-mode" title="Fullscreen Mode" class="md-nav__link">
+    Fullscreen Mode
   </a>
   
 </li>
@@ -376,6 +383,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#available-now" title="Available - Now!" class="md-nav__link">
     Available - Now!
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#200-oct-29-2019" title="2.0.0 - Oct 29, 2019 " class="md-nav__link">
+    2.0.0 - Oct 29, 2019 
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -396,28 +416,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
                 
                 
-                <p><img alt="Gantt Screenshot" src="../img/GANTT-2.png" /></p>
+                <p><img alt="Gantt Screenshot" src="../img/gantt-20-announcement.png" /></p>
 <h1 id="nextedy-gantt-widgets-20">Nextedy Gantt Widgets 2.0</h1>
-<p>We have released a <strong>major</strong> new version of the first <strong>interactive</strong> high-level project <strong>planning &amp; scheduling</strong> inside Polarion ALM.</p>
-<p>This release is <strong>BIG</strong>. So big that we have added a toolbar ;) </p>
-<p><img alt="gantt-toolbar" src="../img/gantt-toolbar.gif" /></p>
-<h2 id="auto-scheduling">Auto Scheduling</h2>
-<p>Let's start with auto-scheduling - we start simple, just but making sure the dependant items gets planned after the dependencies, or simply that they get rescheduled if source item is resheduled as well. </p>
-<p>The auto scheduling is currently triggered only when you change an item or modify a link. </p>
-<p>As a related feature - we have added a highlight if the item starts before the dependency is being finished.</p>
+<p>We have released a new version of Nextedy Gantt Widgets - the first <strong>interactive</strong> high-level project <strong>planning &amp; scheduling</strong> inside Polarion ALM.</p>
+<p>It is a  <strong>major</strong>  step forward that shows where we are heading with Nextedy Gantt Widgets - we aim to make planning in Polarion both robust and fun.</p>
+<h2 id="auto-scheduling">Auto-scheduling</h2>
+<p>Version 2.0 introduces the dependency scheduling feature. Now the items can be re-scheduled automatically based on dependency links between them.</p>
+<p>For example, imagine that you have two items connected by a dependency link and the second item starts when the first one ends, and you need to change the schedule of the first item by moving it to a new date.</p>
+<p>Auto scheduling makes the start date of the second item update according to the end date of the first item each time when it changes. This feature allows you to  <strong>maintain project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
+<p>The also means that auto-scheduling is currently triggered only when you change an item or modify a link.</p>
+<p>As a related feature - we have added a <strong>highlight if the start date of the depending item is planned before the control item</strong> is being finished.</p>
 <p><img alt="gantt-auto-schedule" src="../img/gantt-auto-schedule.gif" /></p>
-<p>You can configure if auto-scheduling should be turned on by default using a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.default.auto_scheduling</code>)</p>
+<p>You can configure if auto-scheduling should be turned on by default using a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.default.auto_scheduling</code>)</p>
 <h2 id="critical-path">Critical Path</h2>
-<p>To let you manage the risks we added a critical path visualization of your gantt project. You can turn it on / off to make sure you can focus on it when needed. </p>
-<p>You can configure if critical-path should be turned on by default using a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.default.critical_path</code>)</p>
+<p>To let you manage risks we added a critical project path visualization to your gantt charts.</p>
+<p>A critical path is a sequence of items that can't be delayed. Otherwise, the whole project would be delayed.
+The critical path also determines the shortest time the project can take.</p>
+<p>A task is considered critical if it has no days of slack and any delay would directly affect the project completion date.
+Slack time is the time that an item can slip without affecting other items or the project's completion date.</p>
+<p>You can turn it on / off as needed directly from the toolbar.  To configure if critical-path should be enabled by default use a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.default.critical_path</code>)</p>
 <p><img alt="gantt-critical-path" src="../img/gantt-critical-path.gif" /></p>
 <h2 id="undoredo">Undo/Redo</h2>
 <p>The title says it all! </p>
-<h2 id="zoom-in-zoom-out-full-screen">Zoom In, Zoom Out &amp; Full-screen</h2>
-<p>It was always able to set the scale of the Gantt view, not you can interactively zoom in and out, or even enter the full-screen mode. </p>
-<p>The default set of scale options has been extended: <strong>DD</strong> - the zoomed in day scale, <strong>D</strong> - the day scale, <strong>W</strong> - the week scale, <strong>M</strong> - the month scale, <strong>Q</strong> - the quarter scale, <strong>Y</strong> - the year scale and <strong>YY</strong> - the zoom out year scale</p>
-<p>You can configure at least the width of time-line columns using  a <a href="../context-properties">project level settings</a> (look for <code>nextedy.gantt.zoom...</code>)</p>
+<h2 id="zoom-in-zoom-out">Zoom In, Zoom Out</h2>
+<p>It has been always possible to set the scale of the Gantt view. Now you can interactively zoom in and out for handy managing of time scale presentation. </p>
+<p>The possible scale options (set as widget property) have been extended as well to: <strong>DD</strong> - zoomed-in day scale, <strong>D</strong> - day scale, <strong>W</strong> - week scale, <strong>M</strong> - month scale, <strong>Q</strong> - quarter scale, <strong>Y</strong> -  year scale and <strong>YY</strong> - zoom-out year scale.</p>
+<p>You can configure the width of time-line columns using  a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.zoom...</code>)</p>
 <p><img alt="gantt-zoom" src="../img/gantt-zoom.gif" /></p>
+<h2 id="fullscreen-mode">Fullscreen Mode</h2>
+<p>The Nextedy Gantt Widgets 2.0 brings you also a simple but useful feature – ability to enlarge the browser view to the full screen. It will be a very handy feature for those who work with big projects.</p>
 <h2 id="configuration-properties">Configuration Properties</h2>
 <p>As you can see above, we have added tons of configuration options that you can define on Polarion project or Global level. Checkout
 <a href="../context-properties">this link</a> to get the full list of the config options.</p>
@@ -428,6 +455,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p><br>
 <br>
 <br></p>
+<hr>
+
+<h3 id="200-oct-29-2019">2.0.0 <small>- Oct 29, 2019 </small></h3>
+<ul>
+<li>Dependency <strong>auto-scheduling</strong></li>
+<li><strong>Critical-path</strong> visualization</li>
+<li>Undo / Redo</li>
+<li><strong>Zoom</strong> In / Out</li>
+<li><strong>Full-screen</strong> mode</li>
+<li>Configuration properties</li>
+</ul>
+<p>Read more at <a href="../ReleaseAnnouncement-2.0">Release 2.0 Announcement</a></p>
                 
                   
                 
