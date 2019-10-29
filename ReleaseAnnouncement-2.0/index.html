@@ -423,7 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2 id="auto-scheduling">Auto-scheduling</h2>
 <p>Version 2.0 introduces the dependency scheduling feature. Now the items can be re-scheduled automatically based on dependency links between them.</p>
 <p>For example, imagine that you have two items connected by a dependency link and the second item starts when the first one ends, and you need to change the schedule of the first item by moving it to a new date.</p>
-<p>Auto scheduling makes the start date of the second item update according to the end date of the first item each time when it changes. This feature allows you to  <strong>maintain project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
+<p>Auto scheduling updates the start date of the second item  according to the end date of the first item each time when it changes. This feature allows you to  <strong>maintain project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
 <p>The also means that auto-scheduling is currently triggered only when you change an item or modify a link.</p>
 <p>As a related feature - we have added a <strong>highlight if the start date of the depending item is planned before the control item</strong> is being finished.</p>
 <p><img alt="gantt-auto-schedule" src="../img/gantt-auto-schedule.gif" /></p>
