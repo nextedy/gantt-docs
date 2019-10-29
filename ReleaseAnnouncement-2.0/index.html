@@ -421,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>We have released a new version of Nextedy Gantt Widgets - the first <strong>interactive</strong> high-level project <strong>planning &amp; scheduling</strong> inside Polarion ALM.</p>
 <p>It is a  <strong>major</strong>  step forward that shows where we are heading with Nextedy Gantt Widgets - we aim to make planning in Polarion both robust and fun.</p>
 <h2 id="auto-scheduling">Auto-scheduling</h2>
-<p>Version 2.0 introduces the dependency scheduling feature. Now the items can be re-scheduled automatically based on dependency links between them.</p>
+<p>Version 2.0 introduces the dependency auto-scheduling feature. Now the items can be re-scheduled automatically based on dependency links between them.</p>
 <p>For example, imagine that you have two items connected by a dependency link and the second item starts when the first one ends, and you need to change the schedule of the first item by moving it to a new date.</p>
 <p>Auto scheduling updates the start date of the second item  according to the end date of the first item each time when it changes (using a Gantt view). This feature allows you to  <strong>maintain project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
 <p>The also means that auto-scheduling is currently triggered only when you change an item or modify a link.</p>
@@ -432,7 +432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>To let you manage risks we added a critical project path visualization to your gantt charts.</p>
 <p>A critical path is a sequence of items that can't be delayed. Otherwise, the whole project would be delayed.
 The critical path also determines the shortest time the project can take.</p>
-<p>A task is considered critical if it has no days of slack and any delay would directly affect the project completion date.
+<p>An item is considered critical if it has no days of slack and any delay would directly affect the project completion date.
 Slack time is the time that an item can slip without affecting other items or the project's completion date.</p>
 <p>You can turn it on / off as needed directly from the toolbar.  To configure if critical-path should be enabled by default use a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.default.critical_path</code>)</p>
 <p><img alt="gantt-critical-path" src="../img/gantt-critical-path.gif" /></p>
