@@ -2,7 +2,7 @@
 ## Changelog
 
 
-### 2.0.0 <small>- Oct 29, 2019 </small>
+### 2.0.0 <small>- Oct 30, 2019 </small>
 * Dependency **auto-scheduling**
 * **Critical-path** visualization
 * Undo / Redo
