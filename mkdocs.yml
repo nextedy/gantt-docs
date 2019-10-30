@@ -8,6 +8,7 @@ nav:
     - Widgets:
        - Work Items Gantt Widget: widget.md
        - Plan Gantt Widget: widget-plan.md
+       - Configuration Properties: context-properties.md      
     - Download: download.md
     - Pricing: pricing.md    
     - Support: support.md

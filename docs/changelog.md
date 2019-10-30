@@ -1,6 +1,17 @@
 # Release Notes 
 ## Changelog
 
+
+### 2.0.0 <small>- Oct 29, 2019 </small>
+* Dependency **auto-scheduling**
+* **Critical-path** visualization
+* Undo / Redo
+* **Zoom** In / Out
+* **Full-screen** mode
+* Configuration properties
+
+Read more at [Release 2.0 Announcement](../ReleaseAnnouncement-2.0)
+
 ### 1.8.3 <small>- Oct 22, 2019 </small>
 * BUG FIX: No plans shown when PlansGantt is configured with "Show Unplanned" = NO
 
@@ -15,6 +26,9 @@
 ### 1.8 <small>- Oct 8, 2019 </small>
 * Add support for scheduling by setting start & end date (for those who prefer explicit planning and not via Duration field). Now you can configure the widget to use any combination of data Mapping: **Start Field & Duration Field** , **End Field & Duration Field**, or **Start Field & End Field**.  The property "Start Field is End Date" is now marked as deprecated, this means it still works well, we just recommend to switch to new format and just set the End Field mapping in Data Mapping section.
 * We have moved all the data mapping settings into special category "Data Mapping".
+
+[Release 1.8.0 Announcement](../ReleaseAnnouncement-1.8.0)
+
  
 ![gantt-data-mapping](img/gantt-data-mapping.png){: style="width:450px"}
  

@@ -1,4 +1,4 @@
-# Context Properties
+# Default Configuration Properties
 You can define following propererties in **Administration > Configuration Properties**
 
 ![Gantt Screenshot](img/config-properties.png)
