@@ -40,7 +40,7 @@
     
     
       
-        <title>ReleaseAnnouncement 2.0 - Nextedy Gantt Widgets</title>
+        <title>![Nextedy Gantt Widgets 2.0 Announcement](img/gantt-20-announcement.png) Nextedy Gantt Widgets 2.0 - Nextedy Gantt Widgets</title>
       
     
     
@@ -130,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </span>
             <span class="md-header-nav__topic">
               
-                ReleaseAnnouncement 2.0
+                ![Nextedy Gantt Widgets 2.0 Announcement](img/gantt-20-announcement.png) Nextedy Gantt Widgets 2.0
               
             </span>
           
@@ -416,21 +416,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
                 
                 
-                <p><img alt="Nextedy Gantt Widgets 2.0 Announcement" src="../img/gantt-20-announcement.png" /></p>
-<h1 id="nextedy-gantt-widgets-20">Nextedy Gantt Widgets 2.0</h1>
+                <h1 id="nextedy-gantt-widgets-20"><img alt="Nextedy Gantt Widgets 2.0 Announcement" src="../img/gantt-20-announcement.png" /> Nextedy Gantt Widgets 2.0</h1>
 <p>We have released a new version of Nextedy Gantt Widgets - the first <strong>interactive</strong> high-level project <strong>planning &amp; scheduling</strong> inside Polarion ALM.</p>
 <p>It is a  <strong>major</strong>  step forward that shows where we are heading with Nextedy Gantt Widgets - we aim to make planning in Polarion both <strong>robust</strong> and <strong>fun</strong>.</p>
 <h2 id="auto-scheduling">Auto-scheduling</h2>
-<p>Version 2.0 introduces the dependency auto-scheduling feature. Now the items can be re-scheduled automatically based on dependency links between them.</p>
-<p>For example, imagine that you have two items connected by a dependency link and the second item starts when the first one ends, and you need to change the schedule of the first item by moving it to a new date.</p>
-<p>Auto scheduling updates the start date of the second item  according to the end date of the first item each time when it changes (using a Gantt view). This feature allows you to  <strong>maintain project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
-<p>The also means that auto-scheduling is currently triggered only when you change an item or modify a link.</p>
-<p>As a related feature - we have added a <strong>highlight if the start date of the depending item is planned before the control item</strong> is being finished.</p>
+<p>Version 2.0 introduces the dependency auto-scheduling feature. Now items can be re-scheduled automatically based on dependency links between them.</p>
+<p>For example, imagine that you have two items connected by a dependency link and the second item starts when the first one ends, and you want to change the schedule of the first item by moving it to a new date.</p>
+<p>Auto scheduling updates the start date of the second item according to the end date of the first item each time when it changes (using Gantt view). This feature allows you to  <strong>maintain the project schedule by specifying relations between items</strong> with no need to set dates of each task manually.</p>
+<p>This also means that auto-scheduling is triggered only when you change an item or modify a link.</p>
+<p>As a related feature - we have added a <strong>highlight if the start date of the dependent item is planned before the controlling item</strong> is being finished.</p>
 <p><img alt="gantt-auto-schedule" src="../img/gantt-auto-schedule.gif" /></p>
 <p>You can configure if auto-scheduling should be turned on by default using a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.default.auto_scheduling</code>)</p>
 <h2 id="critical-path">Critical Path</h2>
-<p>To let you manage risks we added a critical project path visualization to your gantt charts.</p>
-<p>A critical path is a sequence of items that can't be delayed. Otherwise, the whole project would be delayed.
+<p>To let you manage risks we added a critical project path visualization to your Gantt charts.</p>
+<p>A critical path is a sequence of items that may not be delayed. Otherwise, the whole project would be delayed.
 The critical path also determines the shortest time the project can take.</p>
 <p>An item is considered critical if it has no days of slack and any delay would directly affect the project completion date.
 Slack time is the time that an item can slip without affecting other items or the project's completion date.</p>
@@ -444,10 +443,10 @@ Slack time is the time that an item can slip without affecting other items or th
 <p>You can configure the width of time-line columns using  a <a href="../context-properties">project level settings</a> (see <code>nextedy.gantt.zoom...</code>)</p>
 <p><img alt="gantt-zoom" src="../img/gantt-zoom.gif" /></p>
 <h2 id="fullscreen-mode">Fullscreen Mode</h2>
-<p>The Nextedy Gantt Widgets 2.0 brings you also a simple but useful feature – ability to enlarge the browser view to the full screen. It will be a very handy feature for those who work with big projects.</p>
+<p>The Nextedy Gantt Widgets 2.0 brings you also a simple but useful feature – the ability to enlarge the browser view to the full screen. It will be a very handy feature for those who work on big projects.</p>
 <h2 id="configuration-properties">Configuration Properties</h2>
-<p>As you can see above, we have added tons of configuration options that you can define on Polarion project or Global level. Checkout
-<a href="../context-properties">this link</a> to get the full list of the config options.</p>
+<p>As you can see above, we have added tons of configuration options that you can define on Polarion project or Global level. Check
+<a href="../context-properties">this link</a> to get the full list of configuration options.</p>
 <h2 id="available-now">Available - Now!</h2>
 <p>You can download the new version from <a href="../download">downloads page</a>. </p>
 <p>Same price - free update for existing customers. </p>
