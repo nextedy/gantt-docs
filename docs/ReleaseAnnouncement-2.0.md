@@ -52,10 +52,6 @@ You can configure the width of time-line columns using  a [project level setting
 
 ![gantt-zoom](img/gantt-zoom.gif)
 
-## Fullscreen Mode
-
-The Nextedy Gantt Widgets 2.0 brings you also a simple but useful feature – the ability to enlarge the browser view to the full screen. It will be a very handy feature for those who work on big projects.
-
 ## Configuration Properties
 As you can see above, we have added tons of configuration options that you can define on Polarion project or Global level. Check
 [this link](../context-properties) to get the full list of configuration options.
