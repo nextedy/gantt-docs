@@ -13,6 +13,8 @@ As the gantt chart resource view clearly demonstrate the total load of people an
 
 ## Setup
 
+The resource panel loads resource assignments from the Polarion **assignee** property of a Work Item.
+
 To turn Resource Panel on set `Widget Properties > Resource View > Show Resource View` to `true`. The default is false, but you can overwrite it with context property: `nextedy.gantt.workitems.default.resource_view`.
 
 The parameter `Items per Resource - OK limit` holds how many items per time slot are considered OK (rendered as green).  The default is `1`, but you can overwrite it with context property: `nextedy.gantt.workitems.default.resource_per_day_OK`.
