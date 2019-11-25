@@ -147,8 +147,6 @@ Read more at [Release 2.0 Announcement](../ReleaseAnnouncement-2.0)
 	
 Check this site: [Nextedy Systems - Feedback Portal](https://feedback.nextedy.com/)
 
-
-
 <hr>
 <iframe src="https://gantt.nextedy.com/download/bnum.txt" height=35 style="padding-top:10px;border:0px solid white;"> </iframe>
 
