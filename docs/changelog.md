@@ -145,12 +145,8 @@ Read more at [Release 2.0 Announcement](../ReleaseAnnouncement-2.0)
 
 ## Roadmap / TODO
 	
+Check this site: [Nextedy Systems - Feedback Portal](https://feedback.nextedy.com/)
 
-* **Readonly** - add widget property to mark Gantt read-only
-* **Start/End Dates** - add direct support for Start/End dates. 
-	* Currently possible with scripting: [How to set the Gantt time range?](https://nextedy.freshdesk.com/support/solutions/articles/48000063422-how-to-set-the-gantt-time-range-), we are considering adding a dedicated parameters
-* **Server Side Scripted Tooltip** - add widget property - a script - to hold a generation of tooltip on the server side ...
-	* It is possible using a script since 1.0.2 with `Task Script`
 
 
 <hr>
