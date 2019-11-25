@@ -11,8 +11,8 @@ nav:
        - Configuration Properties: context-properties.md      
     - Download: download.md
     - Pricing: pricing.md    
-    - Support: support.md
-    - Release Notes: changelog.md    
+    - Release Notes: changelog.md   
+    - Support: support.md 
     - About: about.md
 
 theme:

@@ -58,5 +58,9 @@ Highlight the differences of the current state against the original plan.
 ![Versioning](img/gantt-versioning.gif)
 
 
+## Resource Allocation View
+The resource management view is quite critical for many projects because it helps to estimate not only a total load of a project, but its parts and load of each resource separately.
+
+![Resource Allocation](img/resource-panel.png)
 
 

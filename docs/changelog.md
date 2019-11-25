@@ -1,10 +1,19 @@
 # Release Notes 
 ## Changelog
 
+### 2.1.* <small>- Nov 25, 2019 </small>
+
+* Resource Allocation Panel
+
+Read more at [Release 2.1 Announcement](../ReleaseAnnouncement-2.1)
+
 
 ### 2.0.* <small>- Oct 31, 2019 </small>
 
-**2.0.1 <small>- Nov 11, 2019 </small>**
+**2.0.4 <small>- Nov 25, 2019 </small>**
+* Fix expception when adding Gantt on Plan or TestRun pages
+
+**2.0.3 <small>- Nov 11, 2019 </small>**
 
 * Fix legacy Icon Url's format (for really old WF configuration)
 * Remove dependency links that point to items outside of gantt

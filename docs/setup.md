@@ -6,8 +6,11 @@
 6.  Stop Polarion service
 3.  Copy `com.nextedy.polarion.gantt` folder into `[POLARION_INSTALL]/polarion/extension` folder.
 4.  If you already have production license, please copy the `gantt_lic.json` file to `[POLARION_INSTALL]/polarion/license`
-5.  Delete `[POLARION_INSTALL]/data/workspace/.config`
+5.  **Delete `[POLARION_INSTALL]/data/workspace/.config`**
 6.  Start Polarion service
+
+!!! warning
+    Please, do not forget about step 5.
 
 
 ## Configure Gantt View
