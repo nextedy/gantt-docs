@@ -387,6 +387,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p><img alt="gantt-resource-panel" src="../img/resource-panel.png" /></p>
 <p>As the gantt chart resource view clearly demonstrate the total load of people and projects, it’ll be simple  to balance the resources load and manage the projects more efficiently. </p>
 <h2 id="setup">Setup</h2>
+<p>The resource panel loads resource assignments from the Polarion <strong>assignee</strong> property of a Work Item.</p>
 <p>To turn Resource Panel on set <code>Widget Properties &gt; Resource View &gt; Show Resource View</code> to <code>true</code>. The default is false, but you can overwrite it with context property: <code>nextedy.gantt.workitems.default.resource_view</code>.</p>
 <p>The parameter <code>Items per Resource - OK limit</code> holds how many items per time slot are considered OK (rendered as green).  The default is <code>1</code>, but you can overwrite it with context property: <code>nextedy.gantt.workitems.default.resource_per_day_OK</code>.</p>
 <p>The parameter <code>View Height</code> specifies the height of the pannel in pixels. The default is <code>250</code>, but you can overwrite it with context property: <code>nextedy.gantt.workitems.default.resource_view.height</code>.</p>
