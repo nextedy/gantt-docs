@@ -10,3 +10,10 @@ Please fill in your email address to download the installation package and initi
 	formId: "385aed16-fb7a-469c-a416-b644cca90b05"
 });
 </script>
+
+!!! info
+	**Cannot download?** We have experienced that some privacy browser add-ons are blocking our CRM System HubSpot (Although we  follow the privacy recommendations and we support GDPR standard). 
+	
+	
+	If you cannot download the distribution from our website - please write us an email to <a href="mailto:info@nextedy.com">info@nextedy.com</a>
+
