@@ -1,6 +1,6 @@
 ![Gantt Screenshot](img/gantt-banner.png)
 
-# Nextedy Gantt Widgets
+# Nextedy GANTT
 
 
 The first **interactive** high-level project planning & scheduling in **Polarion ALM**. 

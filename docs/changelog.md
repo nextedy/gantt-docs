@@ -1,7 +1,15 @@
 # Release Notes 
 ## Changelog
 
-### 2.1.* <small>- Nov 25, 2019 </small>
+### 2.1.* <small>- Dec 9, 2019 </small>
+
+**2.1.2 <small>- Dec 9, 2019 </small>**
+
+* Tooltips on Resource Allocation Panel
+* Open Tasks from Resource Allocation Panel
+* FIX: Support Gantt widget on Person Home Page / Personal Dashboard
+
+**2.1.0 <small>- Nov 25, 2019 </small>**
 
 * Resource Allocation Panel
 
