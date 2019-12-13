@@ -3,10 +3,10 @@
 
 ### 2.1.* <small>- Dec 13, 2019 </small>
 
-* FIX: Weekly scale view shifted by a week
 
 **2.1.3 <small>- Dec 13, 2019 </small>**
 
+* FIX: Weekly scale view shifted by a week
 
 **2.1.2 <small>- Dec 9, 2019 </small>**
 
@@ -21,7 +21,7 @@
 Read more at [Release 2.1 Announcement](../ReleaseAnnouncement-2.1)
 
 
-### 2.0.* <small>- Oct 31, 2019 </small>
+### 2.0.* <small>- Nov 25, 2019 </small>
 
 **2.0.4 <small>- Nov 25, 2019 </small>**
 
@@ -42,7 +42,7 @@ Read more at [Release 2.1 Announcement](../ReleaseAnnouncement-2.1)
 
 Read more at [Release 2.0 Announcement](../ReleaseAnnouncement-2.0)
 
-### 1.8.* <small>- Oct 8, 2019 </small>
+### 1.8.* <small>- Oct 22, 2019 </small>
 
 **1.8.3 <small>- Oct 22, 2019 </small>**
 
@@ -68,7 +68,7 @@ Read more at [Release 2.0 Announcement](../ReleaseAnnouncement-2.0)
  
 ![gantt-data-mapping](img/gantt-data-mapping.png){: style="width:450px"}
  
-### 1.7.* <small>- Sep 9, 2019 </small>
+### 1.7.* <small>- Sep 30, 2019 </small>
 
 ** 1.7.2 <small>- Sep 30, 2019 </small>**
 
