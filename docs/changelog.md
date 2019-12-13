@@ -1,7 +1,12 @@
 # Release Notes 
 ## Changelog
 
-### 2.1.* <small>- Dec 9, 2019 </small>
+### 2.1.* <small>- Dec 13, 2019 </small>
+
+* FIX: Weekly scale view shifted by a week
+
+**2.1.3 <small>- Dec 13, 2019 </small>**
+
 
 **2.1.2 <small>- Dec 9, 2019 </small>**
 
