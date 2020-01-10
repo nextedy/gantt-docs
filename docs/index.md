@@ -63,4 +63,30 @@ The resource management view is quite critical for many projects because it help
 
 ![Resource Allocation](img/resource-panel.png)
 
+## Other Polarion Solutions by Nextedy Systems
 
+
+<div class="card">
+  <a href="https://worksheet.nextedy.com/">
+  <img src="https://worksheet.nextedy.com/img/worksheet-all-thumb.png" alt="Avatar" style="width:100%">
+  <div class="container">  
+    <h4><b>Nextedy WORKSHEET</b></h4>
+    <p>Interactive Work Tracking and Team Assignments for Polarion ALM.</p>
+  </div>
+  </a>
+</div>
+
+<div class="card">
+  <a href="https://checklist.nextedy.com/">
+  <img src="https://checklist.nextedy.com/img/checklist.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Nextedy CHECKLIST</b></h4>
+    <p>Extend your Polarion with action-able checklists to support your workflow process.</p>
+  </div>
+  </a>
+</div>
+
+
+
+<div style="clear: both;"></div>
+<br/><br/><br/>

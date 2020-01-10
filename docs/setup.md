@@ -1,6 +1,8 @@
 # Setup
 
 ## Installation
+
+Installation requirements: <br/>&nbsp;&nbsp;&nbsp;*Polarion 18.1 and newer*
 	
 1.  Download the latest distribution from [here](../download)
 6.  Stop Polarion service
