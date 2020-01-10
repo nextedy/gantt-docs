@@ -63,7 +63,8 @@ The resource management view is quite critical for many projects because it help
 
 ![Resource Allocation](img/resource-panel.png)
 
-## Other Polarion Solutions by Nextedy Systems
+<div style="background-color: whitesmoke;padding:20px;">
+<h2> Other Polarion Solutions by Nextedy Systems</h2>
 
 
 <div class="card">
@@ -93,4 +94,6 @@ The resource management view is quite critical for many projects because it help
 
 
 <div style="clear: both;"></div>
+
+</div>
 <br/><br/><br/>
