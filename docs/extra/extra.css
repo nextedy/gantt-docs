@@ -178,3 +178,6 @@ style> <style> /* The Modal (background) */ .modal {
 .container {
   padding: 2px 16px;
 }
+.card .picture{
+	height: 200px;
+}
