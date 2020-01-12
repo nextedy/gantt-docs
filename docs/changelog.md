@@ -1,6 +1,15 @@
 # Release Notes 
 ## Changelog
 
+### 2.2.* <small>- Jan 12, 2019 </small>
+
+**2.2.0 <small>- Jan 12, 2019 </small>**
+
+* Full screen mode -  It is a very handy feature for those who work with big projects.
+* Drag-n-Drop of Multiple Tasks -  it’s possible to select multiple tasks  by Shift or Ctrl-clicking and move them
+* Scrolling the Timeline with the Mouse - Working with huge Gantt charts is more convenient now, as end users can quickly scroll the timeline using mouse click and drag.
+* Remove nashorn JS dependency
+
 ### 2.1.* <small>- Dec 13, 2019 </small>
 
 
