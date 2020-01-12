@@ -1,6 +1,7 @@
 site_name: Nextedy GANTT
-site_description: 'A set of Polarion Extensions to enable project scheduling in Polarion ALM'
-site_author: 'Nextedy'
+site_description: 'The first interactive high-level project planning & scheduling in Polarion ALM.'
+site_author: Nextedy
+site_url: https://gantt.nextedy.com
 
 nav:
     - Home: index.md
@@ -10,9 +11,9 @@ nav:
        - Plan Gantt Widget: widget-plan.md
        - Configuration Properties: context-properties.md      
     - Download: download.md
-    - Pricing: pricing.md    
-    - Release Notes: changelog.md   
+    - Pricing: pricing.md          
     - Support: support.md 
+    - News: news.md
     - About: about.md
 
 theme:
@@ -40,5 +41,5 @@ markdown_extensions:
   - attr_list
   
   
-copyright: 'Copyright &copy; 2019 Nextedy Systems'
+copyright: 'Copyright &copy; 2020 Nextedy Systems'
   
