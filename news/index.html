@@ -435,7 +435,7 @@ var findTweet = function(){
     i++;
     var targetFrame = document.querySelector(".twitter-timeline");
     if(targetFrame!=null){
-            setSizes();
+                setTimeout(setSizes, 200);      
     }else {
             if(i<100){
                 setTimeout(findTweet, 100);         
