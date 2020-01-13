@@ -1,7 +1,11 @@
+# Download {{product.name}}
 
-# Download Work Items Gantt
 
+## Installation Instructions
 
+The installation instructions are available at the [support center]({{support.installGuide}}).
+	
+Installation requirements: <br/>&nbsp;&nbsp;&nbsp;*{{product.requirements}}*
 
 ## Download
 
@@ -11,8 +15,8 @@ Please fill in your email address to download the installation package.
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script>
   hbspt.forms.create({
-	portalId: "6265870",
-	formId: "385aed16-fb7a-469c-a416-b644cca90b05"
+	portalId: "{{hs.id}}",
+	formId: "{{hs.downloadFormId}}"
 });
 </script>
 

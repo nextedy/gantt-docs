@@ -10,6 +10,9 @@
 * Scrolling the Timeline with the Mouse - Working with huge Gantt charts is more convenient now, as end users can quickly scroll the timeline using mouse click and drag.
 * Remove nashorn JS dependency
 
+Read more at [Release 2.2 Announcement](../ReleaseAnnouncement-2.2)
+
+
 ### 2.1.* <small>- Dec 13, 2019 </small>
 
 

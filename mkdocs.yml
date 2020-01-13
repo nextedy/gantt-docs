@@ -14,7 +14,7 @@ nav:
     - Pricing: pricing.md          
     - Support: support.md 
     - News: news.md
-    - About: about.md
+    - About us: about.md
 
 theme:
   name: 'material'
@@ -33,13 +33,29 @@ extra_css:
 extra_javascript:
   - 'extra/extra.js'
   
+extra:
+  product:
+     name: Nextedy GANTT
+     url: https://gantt.nextedy.com
+     requirements: Polarion 18.1 and newer   
+  support:
+     solution: 48000031169
+     installGuide: https://gantt.nextedy.com/setup/    
+  hs:
+     id: 6265870
+     quoteFormId: c14213f2-29be-4184-987a-b2da34e44422
+     downloadFormId: 385aed16-fb7a-469c-a416-b644cca90b05
+  
 markdown_extensions:
   - admonition
   - codehilite
   - meta
   - tables
   - attr_list
-  
+
+plugins:
+    - search
+    - markdownextradata: {}
   
 copyright: 'Copyright &copy; 2020 Nextedy Systems'
   

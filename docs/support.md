@@ -1,6 +1,6 @@
 # Support
 
-Before opening the ticket, please search through  **the extensive knowledge base** on our [Support Portal](https://nextedy.freshdesk.com/support/solutions/48000031169).
+Before opening the ticket, please search through  **the extensive knowledge base** on our [Support Portal](https://nextedy.freshdesk.com/support/solutions/{{support.solution}}).
 
 If you do not find the answer there, please file a ticket here:
 <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
