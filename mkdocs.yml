@@ -45,6 +45,16 @@ extra:
      id: 6265870
      quoteFormId: c14213f2-29be-4184-987a-b2da34e44422
      downloadFormId: 385aed16-fb7a-469c-a416-b644cca90b05
+  other1:
+     name: Nextedy WORKSHEET
+     url: https://worksheet.nextedy.com
+     image: https://worksheet.nextedy.com/img/worksheet-all-thumb.png
+     description: Interactive Work Tracking and Team Assignments for Polarion ALM.
+  other2:
+     name: Nextedy CHECKLIST
+     url: https://checklist.nextedy.com
+     image: https://checklist.nextedy.com/img/checklist.png
+     description: Extend your Polarion with action-able checklists to support your workflow process.
   
 markdown_extensions:
   - admonition

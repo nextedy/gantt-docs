@@ -1,8 +1,37 @@
 <style>h1{display:none}</style>
-<div id="progress" style="padding-top:30px">
-<b>Loading news ...</b><br/>
-<img src="https://gantt.nextedy.com/img/loading.gif" style="filter: grayscale(100%);"/>
+<div class="ui segment" id="progress" style="padding-top:30px;">
+  <div class="ui active inverted dimmer">
+    <div class="ui text loader">Loading</div>
+  </div>
+  <div class="ui placeholder">
+	  <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 <div class="image header">
+    		<div class="line"></div>
+   		<div class="line"></div>
+ 	 </div>
+ 	 
+  </div>  
 </div>
+
 <div style="display:none" id="news">
 <a class="twitter-timeline" href="https://twitter.com/nextedy?ref_src=twsrc%5Etfw">Tweets by nextedy</a>
 </div> 
