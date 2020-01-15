@@ -2,6 +2,8 @@ site_name: Nextedy GANTT
 site_description: 'The first interactive high-level project planning & scheduling in Polarion ALM.'
 site_author: Nextedy
 site_url: https://gantt.nextedy.com
+site_GTM_ID: GTM-PMZ3VRL
+site_HS_ID: 6265870
 
 nav:
     - Home: index.md

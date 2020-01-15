@@ -52,12 +52,16 @@ var i = 0;
 var findTweet = function(){
 	i++;
 	console.log("search tweet:"+i);
-	var tweet = $(".twitter-timeline").contents().find(".timeline-Tweet").first();
-    if(tweet!=null){
+	var loaded = $(".twitter-timeline").contents().find(".timeline-Tweet").length;
+	console.log(" - " + loaded + " tweets found.");	
+    if(loaded>0){
 	    		setTimeout(setSizes, 200); 	 	
     }else {
     		if(i<100){
 	    		setTimeout(findTweet, 100); 	 	
+    		}else{
+    			$("#progress").hide();
+			$("#news").show();
     		}
     }
 }

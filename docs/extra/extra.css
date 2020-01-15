@@ -4,12 +4,10 @@ body p, h1, h2, h3, h4, li, div, td, th, table {
 	line-height: 28px;
 	font-weight: 400;
 }
-
 code {
 	font-weight: 600;
 	ffont-size: 1em !important;
 }
-
 .md-typeset .admonition, .md-typeset details {
 	font-size: 1em !important;
 }
@@ -155,7 +153,28 @@ style> <style> /* The Modal (background) */ .modal {
     vertical-align: top;
 }
 
-
+.md-typeset .admonition, .md-typeset details {
+    box-shadow: none;
+  }
+.md-typeset .admonition>.admonition-title, .md-typeset .admonition>summary, .md-typeset details>.admonition-title, .md-typeset details>summary {
+    border-bottom: none;
+    background-color: white;
+    padding-left:10px;
+  }
+.md-typeset .admonition>.admonition-title:before, .md-typeset .admonition>summary:before, .md-typeset details>.admonition-title:before, .md-typeset details>summary:before {
+    position: absolute;
+    left: 0rem;
+    color: #448aff;
+    font-size: 1rem;
+    content: "";
+}
+.md-typeset .admonition.info>.admonition-title, .md-typeset .admonition.info>summary, .md-typeset .admonition.todo>.admonition-title, .md-typeset .admonition.todo>summary, .md-typeset details.info>.admonition-title, .md-typeset details.info>summary, .md-typeset details.todo>.admonition-title, .md-typeset details.todo>summary {
+    border-bottom-color: rgba(0,184,212,.1);
+    background-color: white;
+}
+.md-typeset .admonition.info>.admonition-title:before, .md-typeset .admonition.info>summary:before, .md-typeset .admonition.todo>.admonition-title:before, .md-typeset .admonition.todo>summary:before, .md-typeset details.info>.admonition-title:before, .md-typeset details.info>summary:before, .md-typeset details.todo>.admonition-title:before, .md-typeset details.todo>summary:before {
+    content: "";
+}
 
 .card a{
 	color:black;

@@ -2,7 +2,7 @@
   This file was automatically generated - do not edit
 -#}
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMZ3VRL"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config.site_GTM_ID }}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
@@ -33,7 +33,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               {% if page and page.meta and page.meta.title %}
                 {{ config.site_name }} - {{ page.meta.title }}
               {% else %}
-                {{ config.site_name }} - {{ page.title }}
+               {{ config.site_name }} - {{ page.title }}
               {% endif %}
             </span>
           {% endif %}
