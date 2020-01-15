@@ -28,12 +28,17 @@ theme:
   custom_dir: 'theme'
   logo: 'https://www.nextedy.com/wp-content/uploads/2018/10/nextedy-logo.png'
 
+
 extra_css:
   - 'extra/extra.css'
-
-
+  - 'extra/simpleLightbox.min.css'
+  - 'extra/semantic/dist/semantic.min.css'
+  
 extra_javascript:
   - 'extra/extra.js'
+  - 'extra/simpleLightbox.min.js'
+  - 'extra/jquery-3.1.1.min.js'  
+  - 'extra/semantic/dist/semantic.min.js' 
   
 extra:
   product:
