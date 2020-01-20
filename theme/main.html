@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+    
+
+
+
 {% block analytics %}
     {{ super() }}
 	<!-- Start of HubSpot Embed Code via block -->
@@ -17,7 +21,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% block extrahead %}
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
+ {% for path in config["extra_javascript"] %}
+        <script src="{{ path | url }}"></script>
+      {% endfor %}
 {% endblock %}
 
 
+      
