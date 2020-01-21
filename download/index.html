@@ -474,12 +474,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>If you cannot download the distribution from our website - please write us an email to <a href="mailto:info@nextedy.com">info@nextedy.com</a></p>
 <script>
 function setSizes(){
-            console.log("setting style ...");
-            var style = "<style>.hubspot-link__container{display:none;}.submitted-message{border: 1px solid #ff7a59;padding: 10px;font-weight: bold;background-color: #ffe6e0;}.hs-input{background-color: white;}label{font-weight:bold;}legend{    color: #33475b !important;}</style>";
-            $("#hs-form-iframe-0").contents().find(".hbspt-form").first().prepend(style);
-            console.log("setting style DONE");
+    console.log("setting style ...");
+    var style = "<style>.hubspot-link__container{display:none;}.submitted-message{border: 1px solid #ff7a59;padding: 10px;font-weight: bold;background-color: #ffe6e0;}.hs-input{background-color: white;border: 1px solid #f9bbac;}label{font-weight:bold;}legend{    color: #33475b !important;}</style>";
+    $("#hs-form-iframe-0").contents().find(".hbspt-form").first().prepend(style);
+    console.log("setting style DONE");
 }
-
 var i = 0;
 var findHSForm = function(){
     i++;
