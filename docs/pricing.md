@@ -10,6 +10,9 @@ Your purchase entitles you to **perpetual use** of the software
 
 It includes **12 months of software support** & maintenance. 
 
+The *{{product.name}}* pricing is based on **size** of the Polarion deployment, the more users are on the server, the bigger is a price.  We count all active users on the Polarion server. An active **user is** by definition any user account in the Polarion system with the global role  *"User"*, i.e., **anyone who can log in** to Polarion portal.
+
+
 <center>
 
 **Number of users**  	| **Price**
@@ -93,5 +96,42 @@ Start by requesting a no-obligation quote valid for next 30 days:
 	formId: "{{hs.quoteFormId}}"
 });
 </script>
+
+
+### Cannot get a quote?
+
+We have experienced that some privacy browser add-ons are blocking our CRM System HubSpot (Although we  follow the privacy recommendations and we support GDPR standard). 
+	
+	
+If you cannot submit the quote form from our website - please write us an email to <a href="mailto:info@nextedy.com">info@nextedy.com</a>
+ 
+
+<script>
+function setSizes(){
+	console.log("setting style ...");
+   	var style = "<style>.hubspot-link__container{display:none;}.submitted-message{border: 1px solid #ff7a59;padding: 10px;font-weight: bold;background-color: #ffe6e0;}.hs-input{background-color: white;border: 1px solid #f9bbac;}label{font-weight:bold;}legend{    color: #33475b !important;}</style>";
+	$("#hs-form-iframe-0").contents().find(".hbspt-form").first().prepend(style);
+	console.log("setting style DONE");
+}
+var i = 0;
+var findHSForm = function(){
+	i++;
+	console.log("findHSForm:"+i);
+	var loaded = $("#hs-form-iframe-0").contents().find(".hubspot-link__container").length;
+	console.log(" - " + loaded + " hs form.");	
+    if(loaded>0){
+	    		setTimeout(setSizes, 10); 	 	
+    }else {
+    		if(i<100){
+	    		setTimeout(findHSForm, 100); 	 	
+    		}
+    }
+}
+findHSForm();
+</script>
+
+
+
+
 
 

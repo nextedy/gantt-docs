@@ -192,3 +192,8 @@ style> <style> /* The Modal (background) */ .modal {
 .card .image{
 	height: 190px;
 }
+.hbspt-form{
+    border: 2px dotted #f9bbac;
+    padding: 10px;
+    background-color: #f9f5f5;
+    }
