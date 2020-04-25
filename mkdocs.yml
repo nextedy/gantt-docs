@@ -73,6 +73,18 @@ markdown_extensions:
 plugins:
     - search
     - markdownextradata: {}
-  
+    - redirects:
+        redirect_maps:
+            'about.md': 'https://www.nextedy.com/company/'
+            'download.md': 'https://www.nextedy.com/product/nextedy-gantt/#download'
+            'index.md': 'https://www.nextedy.com/product/nextedy-gantt/'
+            'news.md': 'https://www.nextedy.com/news/'
+            'pricing.md': 'https://www.nextedy.com/product/nextedy-gantt/#faq'
+            'support.md': 'https://www.nextedy.com/product/nextedy-gantt/#support'  
+            'setup.md': 'https://nextedy.freshdesk.com/support/solutions/articles/48000354777-install-and-setup-gantt-'  
+            'widget.md': 'https://nextedy.freshdesk.com/support/solutions/articles/48001074061-work-items-gantt-widget-parameters'  
+            'widget-plan.md': 'https://nextedy.freshdesk.com/support/solutions/articles/48001074062-plans-gantt-widget-parameters'  
+            'context-properties.md': 'https://nextedy.freshdesk.com/support/solutions/articles/48001074063-gantt-configure-default-values-and-properties'  
+
 copyright: 'Copyright &copy; 2020 Nextedy Systems'
   
